@@ -1,0 +1,32 @@
+@aboutLabel
+About
+
+@aboutAnchor
+/about
+
+@scriptLabel
+Read the script
+
+@scriptAnchor
+/read-the-script
+
+@resourcesLabel
+Resources for seniors
+
+@resourcesAnchor
+/resources-for-seniors
+
+@navLabels
+aboutLabel,scriptLabel,resourcesLabel
+
+@navLinks
+aboutAnchor,scriptAnchor,resourcesAnchor
+
+@menuButtonLabel
+Menu
+
+@takeoverCloseLabel
+Close
+
+@logoAltText
+Temp logo alt
