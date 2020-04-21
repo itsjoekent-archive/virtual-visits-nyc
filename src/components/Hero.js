@@ -38,6 +38,10 @@ const Content = styled.div`
   max-width: ${({ theme }) => theme.max['3x']};
   margin-left: auto;
   margin-right: auto;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    padding-bottom: ${({ theme }) => theme.spacing['9']};
+  }
 `;
 
 const Title = styled.h1`
@@ -75,6 +79,10 @@ const Subtitle = styled.p`
 
 const PhoneWrapper = styled.div`
   position: relative;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    bottom: -${({ theme }) => theme.spacing['9']};
+  }
 
   svg {
     position: absolute;
