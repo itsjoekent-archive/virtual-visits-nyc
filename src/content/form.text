@@ -1,11 +1,8 @@
-@firstNameLabel
-First name
-
-@emailLabel
-Email
-
-@trainingTimeLabel
-Select an upcoming training time
-
-@signupCta
+@defaultSignupButtonLabel
 Sign up
+
+@defaultCallToAction
+Sign up now for a virtual training to get started making calls.
+
+@defaultMobilizeEventLink
+https://www.mobilize.us/greenwichhouses/event/268983
