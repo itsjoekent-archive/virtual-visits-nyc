@@ -3,17 +3,20 @@
   "version": "1.0.0",
   "scripts": {
     "build": "next build",
-    "start": "next"
+    "start": "rm -rf .next && next"
   },
   "dependencies": {
+    "marksy": "^8.0.0",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "babel-loader": "^8.1.0",
     "babel-plugin-inline-import": "^3.0.0",
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "react-svg-loader": "^3.0.3"
   },
   "license": "ISC"
 }

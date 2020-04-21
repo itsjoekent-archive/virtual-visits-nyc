@@ -41,7 +41,7 @@ const LinksContainer = styled.div`
 
 const Link = styled.a`
   font-family: ${({ theme }) => theme.fonts.family.sanSerif};
-  font-size: ${({ theme }) => theme.fonts.size[2]};
+  font-size: ${({ theme }) => theme.fonts.size[14]};
   font-weight: ${({ theme }) => theme.fonts.weight.sanSerif.regular};
   color: ${({ theme }) => theme.colors.orange.dark};
   text-decoration: none;
@@ -53,22 +53,22 @@ const Link = styled.a`
 `;
 
 const takeoverToggleLineShared = css`
-  width: 24px;
-  height: 4px;
+  width: 16px;
+  height: 2px;
   border-radius: 4px;
   background-color: ${({ isTakeoverOpen, theme }) => isTakeoverOpen ? theme.colors.white.primary : theme.colors.black.primary};
 `;
 
 const TakeoverToggleIcon = styled.span`
   position: absolute;
-  left: -28px;
+  left: -24px;
   display: block;
 
   ${takeoverToggleLineShared}
 
   ${({ theme, isTakeoverOpen }) => isTakeoverOpen && css`
     transform: rotate(45deg);
-    left: -26px;
+    left: -22px;
 
     &:before {
       content: '';
@@ -109,7 +109,7 @@ const TakeoverToggle = styled.button`
   position: relative;
 
   font-family: ${({ theme }) => theme.fonts.family.sanSerif};
-  font-size: ${({ theme }) => theme.fonts.size[3]};
+  font-size: ${({ theme }) => theme.fonts.size[18]};
   font-weight: ${({ theme }) => theme.fonts.weight.sanSerif.bold};
   line-height: 1;
   text-transform: uppercase;
@@ -169,7 +169,7 @@ const TakeoverContainer = styled.div`
   }
 
   ${Link} {
-    font-size: ${({ theme }) => theme.fonts.size[5]};
+    font-size: ${({ theme }) => theme.fonts.size[28]};
     color: ${({ theme }) => theme.colors.white.primary};
     margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
@@ -229,7 +229,7 @@ export default function Navigation() {
     document.addEventListener('click', onClick);
 
     return () => document.removeEventListener('click', onClick);
-  }, [isTakeoverOpen, setIsTakeoverOpen, takeoverRef]);
+  }, [isTakeoverOpen, setIsTakeoverOpen, takeoverRef.current]);
 
   function toggleTakeover() {
     setIsTakeoverOpen(!isTakeoverOpen);

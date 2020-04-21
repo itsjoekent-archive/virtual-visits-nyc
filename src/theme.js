@@ -8,11 +8,12 @@ const theme = {
     },
     orange: {
       light: '#FDF9F7',
-      primary: '#e9bfa4',
+      primary: '#E9BFA4',
       dark: '#231309',
     },
     red: {
-      primary: '#C42F41',
+      bright: '#C42F41',
+      primary: '#af2a3a',
     },
   },
   fonts: {
@@ -24,13 +25,14 @@ const theme = {
 
     },
     size: {
-      1: '12px',
-      2: '14px',
-      3: '18px',
-      4: '24px',
-      5: '28px',
-      6: '36px',
-      7: '48px',
+      12: '12px',
+      14: '14px',
+      16: '16px',
+      18: '18px',
+      24: '24px',
+      28: '28px',
+      36: '36px',
+      48: '48px',
     },
     weight: {
       serif: {
@@ -44,15 +46,14 @@ const theme = {
       },
     },
   },
-  grid: {
-    column: '12%',
-    gutter: '24px',
-  },
   max: {
     site: '1280px',
+    '1x': '400px',
+    '2x': '520px',
+    '3x': '700px',
   },
   media: {
-    mobileLarge: '(min-width: 425px)',
+    mobileLarge: '(min-width: 414px)',
     tablet: '(min-width: 768px)',
     ipad: '(min-width: 1024px) and (min-height: 1200px)',
     desktop: '(min-width: 1024px)',
@@ -69,6 +70,7 @@ const theme = {
     10: '56px',
     11: '72px',
     12: '96px',
+    navHeight: '50px',
   },
   zIndexes: {
     nav: 10,
