@@ -56,9 +56,9 @@ export default function Phone() {
       const translate = ANGLE_PER_FRAME * tweenValue * delta;
 
       renderState.current.angle += (renderState.current.flip ? -1 : 1) * translate;
+      renderState.current.angle = Math.min(Math.max(renderState.current.angle, 0), 120);
 
       dialRef.current.setAttribute('transform', rotateTransformation(renderState.current.angle));
-      // dialRef.current.setAttribute('transform', `rotate(${renderState.current.angle} 146.84 224.186)`);
 
       if (tweenValue === 1) {
         if (renderState.current.flip) {
