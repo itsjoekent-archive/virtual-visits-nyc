@@ -116,6 +116,7 @@ const SignupButton = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
   color: ${({ theme }) => pickColor(colorMap.buttonCopy, theme)};
   background: ${({ theme }) => pickColor(colorMap.buttonBackground, theme)};
   border: 2px solid ${({ theme }) => pickColor(colorMap.buttonBorder, theme)};
