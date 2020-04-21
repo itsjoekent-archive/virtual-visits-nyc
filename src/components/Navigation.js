@@ -40,10 +40,10 @@ const LinksContainer = styled.div`
 `;
 
 const Link = styled.a`
-  font-family: ${({ theme }) => theme.fonts.family.sanSerif};
+  font-family: ${({ theme }) => theme.fonts.family};
   font-size: ${({ theme }) => theme.fonts.size[14]};
-  font-weight: ${({ theme }) => theme.fonts.weight.sanSerif.regular};
-  color: ${({ theme }) => theme.colors.orange.dark};
+  font-weight: ${({ theme }) => theme.fonts.weight.regular};
+  color: ${({ theme }) => theme.colors.black};
   text-decoration: none;
   padding-right: ${({ theme }) => theme.spacing[4]};
 
@@ -56,7 +56,7 @@ const takeoverToggleLineShared = css`
   width: 16px;
   height: 2px;
   border-radius: 4px;
-  background-color: ${({ isTakeoverOpen, theme }) => isTakeoverOpen ? theme.colors.white.primary : theme.colors.black.primary};
+  background-color: ${({ isTakeoverOpen, theme }) => isTakeoverOpen ? theme.colors.white : theme.colors.black};
 `;
 
 const TakeoverToggleIcon = styled.span`
@@ -108,12 +108,12 @@ const TakeoverToggle = styled.button`
   align-items: center;
   position: relative;
 
-  font-family: ${({ theme }) => theme.fonts.family.sanSerif};
+  font-family: ${({ theme }) => theme.fonts.family};
   font-size: ${({ theme }) => theme.fonts.size[18]};
-  font-weight: ${({ theme }) => theme.fonts.weight.sanSerif.bold};
+  font-weight: ${({ theme }) => theme.fonts.weight.bold};
   line-height: 1;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.black.primary};
+  color: ${({ theme }) => theme.colors.black};
   border: none;
   padding: 0;
   margin: 0;
@@ -149,7 +149,7 @@ const TakeoverContainer = styled.div`
   overflow: hidden;
 
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.black.primary};
+  background-color: ${({ theme }) => theme.colors.black};
 
   display: ${({ isTakeoverOpen, isTakeoverFading }) => isTakeoverOpen || isTakeoverFading ? 'flex' : 'none'};
 
@@ -158,7 +158,7 @@ const TakeoverContainer = styled.div`
   `}
 
   ${TakeoverToggle} {
-    color: ${({ theme }) => theme.colors.white.primary};
+    color: ${({ theme }) => theme.colors.white};
   }
 
   ${LinksContainer} {
@@ -170,7 +170,7 @@ const TakeoverContainer = styled.div`
 
   ${Link} {
     font-size: ${({ theme }) => theme.fonts.size[28]};
-    color: ${({ theme }) => theme.colors.white.primary};
+    color: ${({ theme }) => theme.colors.white};
     margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
 

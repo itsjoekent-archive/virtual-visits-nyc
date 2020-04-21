@@ -1,29 +1,14 @@
 const theme = {
   colors: {
-    white: {
-      primary: '#FFFFFF',
-    },
-    black: {
-      primary: '#040201',
-    },
-    orange: {
-      light: '#FDF9F7',
-      primary: '#E9BFA4',
-      dark: '#231309',
-    },
-    red: {
-      bright: '#C42F41',
-      primary: '#af2a3a',
-    },
+    black: '#231309',
+    cream: '#F8EAE2',
+    lightRed: '#D55161',
+    orange: '#D58351',
+    red: '#C42F41',
+    white: '#FFFFFF',
   },
   fonts: {
-    family: {
-      serif: `'Noto Serif', serif`,
-      sanSerif: `'Raleway', sans-serif`,
-    },
-    height: {
-
-    },
+    family: `'Raleway', sans-serif`,
     size: {
       12: '12px',
       14: '14px',
@@ -35,15 +20,9 @@ const theme = {
       48: '48px',
     },
     weight: {
-      serif: {
-        regular: '400',
-        bold: '700',
-      },
-      sanSerif: {
-        regular: '400',
-        bold: '700',
-        black: '900',
-      },
+      regular: '400',
+      bold: '700',
+      black: '900',
     },
   },
   max: {
