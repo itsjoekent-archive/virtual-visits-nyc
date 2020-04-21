@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import content from '../content';
-import Phone from '../art/Phone.js';
+import { BaseTitle } from './Typography';
+import { useContent } from '../content';
+import Phone from '../art/Phone';
 
 const Section = styled.section`
   display: block;
@@ -44,18 +45,12 @@ const Content = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[28]};
-  font-weight: ${({ theme }) => theme.fonts.weight.bold};
-  color: ${({ theme }) => theme.colors.red};
-
+const Title = styled(BaseTitle)`
   width: 100%;
   max-width: ${({ theme }) => theme.max['2x']};
   margin-bottom: ${({ theme }) => theme.spacing[4]};
 
   @media ${({ theme }) => theme.media.desktop} {
-    font-size: ${({ theme }) => theme.fonts.size[48]};
     margin-bottom: ${({ theme }) => theme.spacing[8]};
   }
 `;
@@ -107,15 +102,15 @@ const PhoneWrapper = styled.div`
 
 export default function Hero() {
   const {
-    title,
-    subtitle,
-  } = content;
+    heroTitle,
+    heroSubtitle,
+  } = useContent();
 
   return (
     <Section>
       <Content>
-        <Title>{title}</Title>
-        {(subtitle || '').split('\n').map((line) => (
+        <Title>{heroTitle}</Title>
+        {(heroSubtitle || '').split('\n').map((line) => (
           <Subtitle key={line}>{line}</Subtitle>
         ))}
         <PhoneWrapper>

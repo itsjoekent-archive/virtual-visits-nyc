@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import content from '../content';
+import { useContent } from '../content';
 
 const NavigationContainer = styled.nav`
   display: block;
@@ -179,7 +179,7 @@ const TakeoverContainer = styled.div`
   }
 `;
 
-function mapContentString(input) {
+function mapContentString(input, content) {
   return (input || '')
     .trim()
     .split(',')
@@ -187,6 +187,8 @@ function mapContentString(input) {
 }
 
 export default function Navigation() {
+  const content = useContent();
+
   const {
     menuButtonLabel,
     takeoverCloseLabel,
@@ -195,8 +197,8 @@ export default function Navigation() {
     navLinks: navLinksStringified = '',
   } = content;
 
-  const navLabels = mapContentString(navLabelsStringified);
-  const navLinks = mapContentString(navLinksStringified);
+  const navLabels = mapContentString(navLabelsStringified, content);
+  const navLinks = mapContentString(navLinksStringified, content);
 
   const takeoverRef = React.useRef(null);
 

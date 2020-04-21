@@ -29,7 +29,7 @@ const theme = {
     site: '1280px',
     '1x': '400px',
     '2x': '520px',
-    '3x': '700px',
+    '3x': '737px',
   },
   media: {
     mobileLarge: '(min-width: 414px)',

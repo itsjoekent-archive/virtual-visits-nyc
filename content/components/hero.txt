@@ -1,10 +1,7 @@
-@title
+@heroTitle
 Call seniors during the COVID-19 crisis
 
-@subtitle
+@heroSubtitle
 As social distancing continues for many weeks to come, physical isolation for older adults could lead to a severe secondary crisis for home-bound seniors.
 
 Social isolation brings many challenges, including access to food and medicine, getting good information, mental health, and just having people to talk to as anxiety grows.
-
-@formTitle
-Sign up for a virtual training

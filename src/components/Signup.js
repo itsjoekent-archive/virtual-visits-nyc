@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css, ThemeProvider } from 'styled-components';
-import content from '../content';
+import { useContent } from '../content';
 
 export const RED_PALETTE = 'RED_PALETTE';
 export const ORANGE_PALETTE = 'ORANGE_PALETTE';
@@ -43,6 +43,11 @@ const colorMap = {
   },
 };
 
+const maxMap = {
+  [ROW_DIRECTION]: 'site',
+  [COLUMN_DIRECTION]: '3x',
+};
+
 const Container = styled.div`
   display: block;
   width: 100%;
@@ -57,7 +62,7 @@ const Content = styled.div`
   justify-content: center;
 
   width: 100%;
-  max-width: ${({ theme }) => theme.max.site};
+  max-width: ${({ theme }) => theme.max[maxMap[theme.signup.direction]]};
   margin-left: auto;
   margin-right: auto;
 
@@ -132,7 +137,7 @@ export default function Signup(props) {
     defaultCallToAction,
     defaultSignupButtonLabel,
     defaultMobilizeEventLink,
-  } = content;
+  } = useContent();
 
   const {
     palette = RED_PALETTE,

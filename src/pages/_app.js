@@ -2,8 +2,6 @@ import App from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import Navigation from '../components/Navigation';
-// import Footer from '../Footer';
 import theme from '../theme';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
 export default class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, content } = this.props;
 
     return (
       <ThemeProvider theme={theme}>
@@ -26,9 +24,7 @@ export default class MyApp extends App {
           <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
         </Head>
         <GlobalStyle />
-        <Navigation />
         <Component {...pageProps} />
-        {/* <Footer /> */}
       </ThemeProvider>
     );
   }

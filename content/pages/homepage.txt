@@ -1,0 +1,38 @@
+@homepageTitle
+Swipe left, but for a different kind of relationship.
+
+@homepageStepOneLabel
+Step One
+
+@homepageStepOneTitle
+30 Minute Virtual Training
+
+@homepageStepOneCopy
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+@homepageStepTwoLabel
+Step Two
+
+@homepageStepTwoTitle
+Match with at least three seniors
+
+@homepageStepTwoCopy
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+@homepageStepThreeLabel
+Step Three
+
+@homepageStepThreeTitle
+Build a friendly relationship!
+
+@homepageStepThreeCopy
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+@homepageSteps
+homepageStepOne,homepageStepTwo,homepageStepThree
+
+@homepageStepHighlights
+homepageStepThree
+
+@homepageCallToAction
+Sign up now for a virtual training on how to start building relationships with seniors who are facing social isolation due to COVID-19.
