@@ -50,6 +50,10 @@ const Link = styled.a`
   &:last-of-type {
     padding-right: 0;
   }
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const takeoverToggleLineShared = css`

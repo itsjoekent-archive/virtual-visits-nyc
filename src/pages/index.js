@@ -149,7 +149,7 @@ export default function Homepage(props) {
       <Navigation />
       <Hero />
       <Signup />
-      <MidSection>
+      <MidSection as="main">
         <MidSectionContent>
           <Title as="h2">{homepageTitle}</Title>
           {homepageStepsFormatted.map(({ label, title, copy, isHighlighted }) => (

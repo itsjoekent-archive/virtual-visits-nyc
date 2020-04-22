@@ -47,3 +47,10 @@ export async function loadManyContentFiles(fs, path, files) {
 
   return result.reduce((acc, data) => ({ ...acc, ...data }), {});
 }
+
+export function loadAllPagePaths(fs, path) {
+  const postsDirectory = path.join(process.cwd(), 'content/pages');
+  const filenames = fs.readdirSync(postsDirectory);
+
+  return filenames.map((name) => `${name.replace('.txt', '')}`);
+}
