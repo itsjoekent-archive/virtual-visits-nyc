@@ -36,3 +36,24 @@ homepageStepThree
 
 @homepageCallToAction
 Sign up now for a virtual training on how to start building relationships with seniors who are facing social isolation due to COVID-19.
+
+@homepageQuote
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+
+@homepageQuoteAuthor
+Brad Lander
+
+@homepageQuoteByline
+New York City Councilmember for the 39th District
+
+@homepageAboutHeader
+About Neighbor Network
+
+@homepageAboutCopy
+The Neighbor Network is an initiative aiming to deploy volunteers to call seniors in New York City for the duration of the COVID-19 crisis. These calls help fight social isolation, connect older adults with needed resources, and build relationships that will benefit both seniors and volunteers.
+
+@homepageAboutLinkLabel
+Read more about Neighbor Network
+
+@homepageAboutLinkTarget
+/about

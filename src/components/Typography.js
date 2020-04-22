@@ -28,3 +28,16 @@ export const BaseParagraph = styled.p`
   font-weight: ${({ theme }) => theme.fonts.weight.regular};
   color: ${({ theme }) => theme.colors.black};
 `;
+
+export const BaseLink = styled.a`
+  font-family: ${({ theme }) => theme.fonts.family};
+  font-size: ${({ theme }) => theme.fonts.size[18]};
+  font-weight: ${({ theme }) => theme.fonts.weight.regular};
+  color: ${({ theme }) => theme.colors.orange};
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.lightRed};
+  }
+`;

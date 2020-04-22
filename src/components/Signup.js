@@ -53,6 +53,14 @@ const Container = styled.div`
   width: 100%;
   padding: ${({ theme }) => theme.spacing[4]};
   background-color: ${({ theme }) => theme.colors[colorMap.background[theme.signup.palette]]};
+
+  ${({ theme }) => theme.signup.direction === COLUMN_DIRECTION && css`
+    max-width: ${({ theme }) => theme.max.site};
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: ${({ theme }) => theme.spacing[9]};
+    padding-bottom: ${({ theme }) => theme.spacing[9]};
+  `}
 `;
 
 const Content = styled.div`

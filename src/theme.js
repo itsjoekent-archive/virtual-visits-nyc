@@ -30,6 +30,7 @@ const theme = {
     '1x': '400px',
     '2x': '520px',
     '3x': '737px',
+    '4x': '953px',
   },
   media: {
     mobileLarge: '(min-width: 414px)',
