@@ -1,0 +1,26 @@
+@footerAboutTitle
+About Us
+
+@footerAboutLinks
+About the Neighbor Network:::/about
+About Greenwich House:::https://www.greenwichhouse.org/about/
+Contact Us:::/
+FAQ:::/faq
+
+@footerVolunteerTitle
+Volunteer Help
+
+@footerVolunteerLinks
+Call Script:::/call-script
+Conversation Starters:::/conversation-starters
+Resend my matches:::/
+Unsubscribe from matching:::/
+
+@footerSeniorTitle
+Help for older adults
+
+@footerSeniorLinks
+Resources for seniors:::/resources-for-seniors
+
+@footerLists
+footerAbout,footerVolunteer,footerSenior

@@ -8,7 +8,7 @@ About
 Read the script
 
 @scriptAnchor
-/read-the-script
+/call-script
 
 @resourcesLabel
 Resources for seniors

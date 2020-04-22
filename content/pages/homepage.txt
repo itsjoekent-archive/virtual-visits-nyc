@@ -57,3 +57,6 @@ Read more about Neighbor Network
 
 @homepageAboutLinkTarget
 /about
+
+@homepageCityAlt
+An illustration of the New York City skyline

@@ -6,6 +6,7 @@ import styled, { css } from 'styled-components';
 import Hero from '../components/Hero';
 import Signup, { ORANGE_PALETTE, COLUMN_DIRECTION } from '../components/Signup';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../components/Typography';
 import { ContentContext, loadManyContentFiles } from '../content';
 
@@ -42,6 +43,7 @@ const StepContainer = styled.div`
 `;
 
 const StepLabel = styled(BaseParagraph)`
+  font-size: 12px;
   text-transform: uppercase;
   text-decoration: underline;
   margin-bottom: ${({ theme }) => theme.spacing[1]};
@@ -137,6 +139,7 @@ export default function Homepage(props) {
     homepageAboutCopy,
     homepageAboutLinkLabel,
     homepageAboutLinkTarget,
+    homepageCityAlt,
   } = content;
 
   const homepageStepsFormatted = mapSteps(homepageSteps, content);
@@ -178,8 +181,9 @@ export default function Homepage(props) {
             {homepageAboutLinkLabel}
           </BaseLink>
         </MidSectionContent>
-        <CitySkyline src="/city.png" />
+        <CitySkyline src="/city.png" alt={homepageCityAlt} />
       </MidSection>
+      <Footer />
     </ContentContext.Provider>
   );
 }
@@ -190,6 +194,7 @@ export async function getStaticProps(context) {
     'components/form',
     'components/hero',
     'components/nav',
+    'components/footer',
   ]);
 
   return {
