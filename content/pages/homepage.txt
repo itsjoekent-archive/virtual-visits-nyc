@@ -10,10 +10,13 @@ Social isolation brings many challenges, including access to food and medicine, 
 Sign up now for a virtual training to get started making calls.
 
 @homepageStepsTitle
-Swipe left, but for a different kind of relationship.
+swipe,right
+
+@homepageStepsSubtitle
+*but for a different kind of relationship
 
 @homepageStepOneLabel
-Step One
+step one (30 mins)
 
 @homepageStepOneTitle
 30 Minute Virtual Training
@@ -22,7 +25,7 @@ Step One
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 @homepageStepTwoLabel
-Step Two
+step two (30-60 mins)
 
 @homepageStepTwoTitle
 Match with at least three seniors
@@ -31,7 +34,7 @@ Match with at least three seniors
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 @homepageStepThreeLabel
-Step Three
+step three (60 mins/week)
 
 @homepageStepThreeTitle
 Build a friendly relationship!
@@ -42,11 +45,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 @homepageSteps
 homepageStepOne,homepageStepTwo,homepageStepThree
 
-@homepageStepHighlights
-homepageStepThree
+@homepageStepsCallToActionHeader
+Sign up now for a virtual training to get started
 
-@homepageCallToAction
-Sign up now for a virtual training on how to start building relationships with seniors who are facing social isolation due to COVID-19.
+@homepageStepsCallToActionCopy
+Start building relationships with seniors who are facing social isolation due to COVID-19
 
 @homepageQuote
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
@@ -54,7 +57,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 @homepageQuoteAuthor
 Brad Lander
 
-@homepageQuoteByline
+@homepageQuoteTitle
 New York City Councilmember for the 39th District
 
 @homepageAboutHeader

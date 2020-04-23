@@ -4,11 +4,11 @@ About
 @aboutAnchor
 /about
 
-@scriptLabel
-Read the script
+@volunteerHelpLabel
+Conversation starters
 
-@scriptAnchor
-/call-script
+@volunteerHelpAnchor
+/conversation-starters
 
 @resourcesLabel
 Resources for seniors
@@ -17,10 +17,10 @@ Resources for seniors
 /resources-for-seniors
 
 @navLabels
-aboutLabel,scriptLabel,resourcesLabel
+aboutLabel,volunteerHelpLabel,resourcesLabel
 
 @navLinks
-aboutAnchor,scriptAnchor,resourcesAnchor
+aboutAnchor,volunteerHelpAnchor,resourcesAnchor
 
 @menuButtonLabel
 Menu

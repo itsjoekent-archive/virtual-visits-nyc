@@ -174,7 +174,7 @@ const TakeoverContainer = styled.div`
   }
 
   ${Link} {
-    font-size: ${({ theme }) => theme.fonts.size[18]};
+    font-size: ${({ theme }) => theme.fonts.size[24]};
     margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
 

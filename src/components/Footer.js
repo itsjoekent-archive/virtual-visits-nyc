@@ -6,7 +6,6 @@ const Container = styled.footer`
   display: block;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.lightOrange};
-  padding: ${({ theme }) => theme.spacing[7]};
 `;
 
 const Content = styled.div`
@@ -17,6 +16,7 @@ const Content = styled.div`
   max-width: ${({ theme }) => theme.max['3x']};
   margin-left: auto;
   margin-right: auto;
+  padding: ${({ theme }) => theme.spacing[7]};
 
   @media ${({ theme }) => theme.media.tablet} {
     flex-direction: row;
