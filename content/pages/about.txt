@@ -1,5 +1,5 @@
 @pageTitle
-About the Neighbor Network
+About
 
 @pageContent
 ## What is the Neighbor Network?

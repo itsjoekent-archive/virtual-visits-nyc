@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 import React from 'react';
-import styled, { css, createGlobalStyle } from 'styled-components';
+import styled, { css } from 'styled-components';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { BlueButton } from '../components/Button';
@@ -16,12 +16,6 @@ function mapSteps(homepageSteps, content) {
     copy: content[`${key}Copy`],
   }));
 }
-
-const GlobalPageStyle = createGlobalStyle`
-  body {
-    background-color: ${({ theme }) => theme.colors.lightOrange};
-  }
-`;
 
 const HeroSection = styled.section`
   display: flex;
@@ -442,7 +436,6 @@ export default function Homepage(props) {
   return (
     <ContentContext.Provider value={content}>
       <Navigation />
-      <GlobalPageStyle />
       <HeroSection>
         <HeroTitleBlock>
           <HeroTitle>{homepageTitle}</HeroTitle>

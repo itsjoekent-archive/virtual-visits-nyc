@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
   html, body, h1, h2, h3, h4, p {
     margin: 0;
   }
+
+  body {
+    background-color: ${({ theme }) => theme.colors.lightOrange};
+  }
 `;
 
 export default class MyApp extends App {

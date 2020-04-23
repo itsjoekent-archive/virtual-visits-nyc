@@ -11,11 +11,15 @@ import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../components/Ty
 import { ContentContext, loadAllPagePaths, loadManyContentFiles } from '../content';
 
 const Hero = styled.div`
-  display: block;
-  background-color: ${({ theme }) => theme.colors.lightOrange};
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: ${({ theme }) => theme.max['3x']};
+  margin-left: auto;
+  margin-right: auto;
 
-  padding-left: ${({ theme }) => theme.spacing[8]};
-  padding-right: ${({ theme }) => theme.spacing[8]};
+  padding-left: ${({ theme }) => theme.spacing[7]};
+  padding-right: ${({ theme }) => theme.spacing[7]};
 
   padding-top: calc(
     ${({ theme }) => theme.spacing.navHeight}
@@ -38,18 +42,31 @@ const Hero = styled.div`
 `;
 
 const HeroTitle = styled(BaseTitle)`
-  width: 100%;
-  max-width: ${({ theme }) => theme.max['3x']};
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: ${({ theme }) => theme.spacing[7]};
+  width: fit-content;
+  margin-left: -${({ theme }) => theme.spacing[4]};
+  padding: ${({ theme }) => theme.spacing[4]} ${({ theme }) => theme.spacing[7]};
+  background-color: ${({ theme }) => theme.colors.white};
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: ${({ theme }) => theme.spacing[4]};
+    left: ${({ theme }) => theme.spacing[4]};
+    width: 100%;
+    height: 100%;
+    background-color: ${({ theme }) => theme.colors.lightBlue};
+    background-image: url(/patterns/wiggle.png);
+    background-size: 26px 13px;
+    background-repeat: repeat;
+  }
 `;
 
 const MainSection = styled.main`
   width: 100%;
-  padding: ${({ theme }) => theme.spacing[7]};
-  background-color: ${({ theme }) => theme.colors.white};
-  padding-bottom: ${({ theme }) => theme.spacing[7]};
+  margin-bottom: ${({ theme }) => theme.spacing[7]};
 `;
 
 const Content = styled.div`
@@ -60,6 +77,7 @@ const Content = styled.div`
   max-width: ${({ theme }) => theme.max['3x']};
   margin-left: auto;
   margin-right: auto;
+  padding: ${({ theme }) => theme.spacing[7]};
 `;
 
 const PageHeader = styled(BaseHeader)`
