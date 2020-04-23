@@ -21,7 +21,7 @@ export default class MyApp extends App {
     return (
       <ThemeProvider theme={theme}>
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet"></link>
         </Head>
         <GlobalStyle />
         <Component {...pageProps} />

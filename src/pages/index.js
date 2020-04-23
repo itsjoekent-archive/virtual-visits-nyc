@@ -50,7 +50,7 @@ const StepLabel = styled(BaseParagraph)`
 `;
 
 const StepHeader = styled(BaseHeader)`
-  margin-bottom: ${({ theme }) => theme.spacing[7]};
+  margin-bottom: ${({ theme }) => theme.spacing[2]};
 
   ${({ isHighlighted, theme  }) => isHighlighted && css`
     color: ${theme.colors.orange};

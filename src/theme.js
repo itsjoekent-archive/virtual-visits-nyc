@@ -8,7 +8,7 @@ const theme = {
     white: '#FFFFFF',
   },
   fonts: {
-    family: `'Raleway', sans-serif`,
+    family: `'Open Sans', sans-serif`,
     size: {
       12: '12px',
       14: '14px',

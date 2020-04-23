@@ -26,8 +26,14 @@ const Content = styled.div`
 const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: ${({ theme }) => theme.spacing[7]};
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media ${({ theme }) => theme.media.tablet} {
+    margin-bottom: 0;
     margin-right: ${({ theme }) => theme.spacing[7]};
     flex: 0 0 33.33%;
 

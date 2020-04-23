@@ -153,7 +153,7 @@ const TakeoverContainer = styled.div`
   overflow: hidden;
 
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.orange};
 
   display: ${({ isTakeoverOpen, isTakeoverFading }) => isTakeoverOpen || isTakeoverFading ? 'flex' : 'none'};
 
@@ -173,7 +173,7 @@ const TakeoverContainer = styled.div`
   }
 
   ${Link} {
-    font-size: ${({ theme }) => theme.fonts.size[28]};
+    font-size: ${({ theme }) => theme.fonts.size[18]};
     color: ${({ theme }) => theme.colors.white};
     margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
