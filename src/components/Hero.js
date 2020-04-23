@@ -7,7 +7,7 @@ import Phone from '../art/Phone';
 const Section = styled.section`
   display: block;
   overflow: hidden;
-  background-color: ${({ theme }) => theme.colors.cream};
+  background-color: ${({ theme }) => theme.colors.lightOrange};
 
   padding-left: ${({ theme }) => theme.spacing[8]};
   padding-right: ${({ theme }) => theme.spacing[8]};

@@ -13,7 +13,7 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: ${({ theme }) => theme.colors.cream};
+  background-color: ${({ theme }) => theme.colors.lightOrange};
 `;
 
 const Container = styled.main`

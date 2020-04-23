@@ -25,7 +25,7 @@ const NavigationContent = styled.div`
 const Logo = styled.a`
   img {
     display: block;
-    width: 100%;
+    height: 45px;
   }
 `;
 
@@ -52,7 +52,7 @@ const Link = styled.a`
   }
 
   &:hover {
-    text-decoration: underline;
+    color: ${({ theme }) => theme.colors.blue};
   }
 `;
 
@@ -60,7 +60,7 @@ const takeoverToggleLineShared = css`
   width: 16px;
   height: 2px;
   border-radius: 4px;
-  background-color: ${({ isTakeoverOpen, theme }) => isTakeoverOpen ? theme.colors.white : theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.black};
 `;
 
 const TakeoverToggleIcon = styled.span`
@@ -150,10 +150,11 @@ const TakeoverContainer = styled.div`
   left: 0;
   z-index: ${({ theme }) => theme.zIndexes.navTakeover};
   width: 100%;
+  height: 100vh;
   overflow: hidden;
 
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.orange};
+  background-color: ${({ theme }) => theme.colors.white};
 
   display: ${({ isTakeoverOpen, isTakeoverFading }) => isTakeoverOpen || isTakeoverFading ? 'flex' : 'none'};
 
@@ -162,7 +163,7 @@ const TakeoverContainer = styled.div`
   `}
 
   ${TakeoverToggle} {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.black};
   }
 
   ${LinksContainer} {
@@ -174,7 +175,6 @@ const TakeoverContainer = styled.div`
 
   ${Link} {
     font-size: ${({ theme }) => theme.fonts.size[18]};
-    color: ${({ theme }) => theme.colors.white};
     margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
 
@@ -267,7 +267,7 @@ export default function Navigation() {
       >
         <TakeoverNavigationRow>
           <Logo href="/">
-            <img src="/logo-light.png" alt={logoAltText} />
+            <img src="/logo.png" alt={logoAltText} />
           </Logo>
           <TakeoverToggle onClick={toggleTakeover}>
             <TakeoverToggleIcon isTakeoverOpen={isTakeoverOpen} />

@@ -5,7 +5,7 @@ import { useContent } from '../content';
 const Container = styled.footer`
   display: block;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.cream};
+  background-color: ${({ theme }) => theme.colors.lightOrange};
   padding: ${({ theme }) => theme.spacing[7]};
 `;
 

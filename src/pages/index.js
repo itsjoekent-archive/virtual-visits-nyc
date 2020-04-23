@@ -2,119 +2,12 @@ import fs from 'fs';
 import path from 'path';
 
 import React from 'react';
-import styled, { css } from 'styled-components';
-import Hero from '../components/Hero';
-import Signup, { ORANGE_PALETTE, COLUMN_DIRECTION } from '../components/Signup';
+import styled, { css, createGlobalStyle } from 'styled-components';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { BlueButton } from '../components/Button';
 import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../components/Typography';
 import { ContentContext, loadManyContentFiles } from '../content';
-
-const MidSection = styled.section`
-  display: block;
-  width: 100%;
-  position: relative;
-  padding: ${({ theme }) => theme.spacing[9]} ${({ theme }) => theme.spacing[7]};
-  background-color: ${({ theme }) => theme.colors.white};
-`;
-
-const MidSectionContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: ${({ theme, max }) => theme.max[max || '3x']};
-  margin-left: auto;
-  margin-right: auto;
-`;
-
-const Title = styled(BaseTitle)`
-  margin-bottom: ${({ theme }) => theme.spacing[7]};
-  width: 100%;
-`;
-
-const StepContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: ${({ theme }) => theme.spacing[7]};
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-`;
-
-const StepLabel = styled(BaseParagraph)`
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  margin-bottom: ${({ theme }) => theme.spacing[1]};
-`;
-
-const StepHeader = styled(BaseHeader)`
-  margin-bottom: ${({ theme }) => theme.spacing[2]};
-
-  ${({ isHighlighted, theme  }) => isHighlighted && css`
-    color: ${theme.colors.orange};
-  `}
-`;
-
-const StepCopy = styled(BaseParagraph)`
-  margin-bottom: ${({ theme }) => theme.spacing[7]};
-`;
-
-const QuoteContainer = styled.div`
-  margin-bottom: ${({ theme }) => theme.spacing[9]};
-
-  @media ${({ theme }) => theme.media.desktop} {
-    margin-bottom: ${({ theme }) => theme.spacing[11]};
-  }
-`;
-
-const Quote = styled.p`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[24]};
-  font-weight: ${({ theme }) => theme.fonts.weight.black};
-  letter-spacing: 1px;
-  color: ${({ theme }) => theme.colors.black};
-  text-transform: uppercase;margin-bottom: ${({ theme }) => theme.spacing[7]};
-  letter-spacing: 1px;
-  margin-bottom: ${({ theme }) => theme.spacing[4]};
-
-  @media ${({ theme }) => theme.media.desktop} {
-    font-size: ${({ theme }) => theme.fonts.size[36]};
-  }
-`;
-
-const QuoteAuthor = styled.p`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[18]};
-  font-weight: ${({ theme }) => theme.fonts.weight.bold};
-  color: ${({ theme }) => theme.colors.orange};
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: ${({ theme }) => theme.spacing[1]};
-`;
-
-const QuoteByline = styled.p`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[14]};
-  font-weight: ${({ theme }) => theme.fonts.weight.regular};
-  color: ${({ theme }) => theme.colors.black};
-  text-transform: uppercase;
-  letter-spacing: 1px;
-`;
-
-const CitySkyline = styled.img`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  opacity: 0.15;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    width: 30%;
-    opacity: 0.5;
-  }
-`;
 
 function mapSteps(homepageSteps, content) {
   return homepageSteps.split(',').map((key) => ({
@@ -125,11 +18,127 @@ function mapSteps(homepageSteps, content) {
   }));
 }
 
+const GlobalPageStyle = createGlobalStyle`
+  body {
+    background-color: ${({ theme }) => theme.colors.lightOrange};
+  }
+`;
+
+const HeroSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: ${({ theme }) => theme.max['4x']};
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(
+    ${({ theme }) => theme.spacing.navHeight}
+    + ${({ theme }) => theme.spacing[11]}
+  );
+  margin-bottom: ${({ theme }) => theme.spacing[11]};
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: calc(100% - ${({ theme }) => theme.spacing[12]});
+    margin-top: ${({ theme }) => theme.spacing[9]};
+    background-color: ${({ theme }) => theme.colors.lightBlue};
+    background-image: url(/patterns/morphing-diamonds.png);
+    background-size: 29px 30px;
+    background-repeat: repeat;
+
+    @media ${({ theme }) => theme.media.tablet} {
+      margin-left: ${({ theme }) => theme.spacing[7]};
+      max-width: calc(${({ theme }) => theme.max['4x']} - ${({ theme }) => theme.spacing[7]});
+      height: calc(100% - ${({ theme }) => theme.spacing[11]});
+    }
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+`;
+
+const HeroTitleBlock = styled.div`
+  background-color: ${({ theme }) => theme.colors.blue};
+  padding-top: ${({ theme }) => theme.spacing[8]};
+  padding-bottom: ${({ theme }) => theme.spacing[9]};
+  padding-left: ${({ theme }) => theme.spacing[7]};
+  padding-right: ${({ theme }) => theme.spacing[7]};
+  width: calc(100% - ${({ theme }) => theme.spacing[7]});
+
+  @media ${({ theme }) => theme.media.tablet} {
+    width: 40%;
+    margin-right: 0;
+    padding-right: ${({ theme }) => theme.spacing[9]};
+  }
+`;
+
+const HeroTitle = styled.h1`
+  font-family: ${({ theme }) => theme.fonts.family};
+  font-size: ${({ theme }) => theme.fonts.size[28]};
+  font-weight: ${({ theme }) => theme.fonts.weight.black};
+  color: ${({ theme }) => theme.colors.white};
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  @media ${({ theme }) => theme.media.mobileLarge} {
+    font-size: ${({ theme }) => theme.fonts.size[36]};
+  }
+
+  @media ${({ theme }) => theme.media.desktop} {
+    font-size: ${({ theme }) => theme.fonts.size[48]};
+  }
+`;
+
+const HeroSubtitleBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.white};
+  padding-top: ${({ theme }) => theme.spacing[8]};
+  padding-bottom: ${({ theme }) => theme.spacing[8]};
+  padding-left: ${({ theme }) => theme.spacing[7]};
+  padding-right: ${({ theme }) => theme.spacing[7]};
+  margin-top: -${({ theme }) => theme.spacing[7]};
+  margin-left: ${({ theme }) => theme.spacing[7]};
+
+  @media ${({ theme }) => theme.media.tablet} {
+    width: 60%;
+    margin-top: ${({ theme }) => theme.spacing[7]};
+    margin-left: -${({ theme }) => theme.spacing[7]};
+  }
+`;
+
+const HeroSubtitleParagraph = styled(BaseParagraph)`
+  margin-bottom: ${({ theme }) => theme.spacing[4]};
+
+  @media ${({ theme }) => theme.media.tablet} {
+    margin-bottom: ${({ theme }) => theme.spacing[7]};
+  }
+`;
+
+const HeroSubtitleCallToAction = styled.p`
+  font-family: ${({ theme }) => theme.fonts.family};
+  font-size: ${({ theme }) => theme.fonts.size[24]};
+  font-weight: ${({ theme }) => theme.fonts.weight.bold};
+  color: ${({ theme }) => theme.colors.blue};
+  margin-bottom: ${({ theme }) => theme.spacing[7]};
+`;
+
 export default function Homepage(props) {
   const { content } = props;
 
   const {
     homepageTitle,
+    homepageSubtitle,
+    homepageHeroCta,
+    homepageStepsTitle,
     homepageSteps,
     homepageCallToAction,
     homepageQuote,
@@ -139,7 +148,8 @@ export default function Homepage(props) {
     homepageAboutCopy,
     homepageAboutLinkLabel,
     homepageAboutLinkTarget,
-    homepageCityAlt,
+    defaultMobilizeEventLink,
+    defaultSignupButtonLabel,
   } = content;
 
   const homepageStepsFormatted = mapSteps(homepageSteps, content);
@@ -147,42 +157,25 @@ export default function Homepage(props) {
   return (
     <ContentContext.Provider value={content}>
       <Navigation />
-      <Hero />
-      <Signup />
-      <MidSection as="main">
-        <MidSectionContent>
-          <Title as="h2">{homepageTitle}</Title>
-          {homepageStepsFormatted.map(({ label, title, copy, isHighlighted }) => (
-            <StepContainer key={title}>
-              <StepLabel as="span">{label}</StepLabel>
-              <StepHeader as="h3" isHighlighted={isHighlighted}>
-                {title}
-              </StepHeader>
-              <StepCopy>{copy}</StepCopy>
-            </StepContainer>
+      <GlobalPageStyle />
+      <HeroSection>
+        <HeroTitleBlock>
+          <HeroTitle>{homepageTitle}</HeroTitle>
+        </HeroTitleBlock>
+        <HeroSubtitleBlock>
+          {(homepageSubtitle || '').split('\n').map((line) => (
+            <HeroSubtitleParagraph key={line}>
+              {line}
+            </HeroSubtitleParagraph>
           ))}
-        </MidSectionContent>
-      </MidSection>
-      <Signup
-        direction={COLUMN_DIRECTION}
-        palette={ORANGE_PALETTE}
-        callToAction={homepageCallToAction}
-      />
-      <MidSection>
-        <MidSectionContent>
-          <QuoteContainer>
-            <Quote>“{homepageQuote}“</Quote>
-            <QuoteAuthor>{homepageQuoteAuthor}</QuoteAuthor>
-            <QuoteByline>{homepageQuoteByline}</QuoteByline>
-          </QuoteContainer>
-          <StepHeader>{homepageAboutHeader}</StepHeader>
-          <StepCopy>{homepageAboutCopy}</StepCopy>
-          <BaseLink href={homepageAboutLinkTarget}>
-            {homepageAboutLinkLabel}
-          </BaseLink>
-        </MidSectionContent>
-        <CitySkyline src="/city.png" alt={homepageCityAlt} />
-      </MidSection>
+          <HeroSubtitleCallToAction>
+            {homepageHeroCta}
+          </HeroSubtitleCallToAction>
+          <BlueButton href={defaultMobilizeEventLink}>
+            {defaultSignupButtonLabel}
+          </BlueButton>
+        </HeroSubtitleBlock>
+      </HeroSection>
       <Footer />
     </ContentContext.Provider>
   );
@@ -192,7 +185,6 @@ export async function getStaticProps(context) {
   const content = await loadManyContentFiles(fs, path, [
     'pages/homepage',
     'components/form',
-    'components/hero',
     'components/nav',
     'components/footer',
   ]);

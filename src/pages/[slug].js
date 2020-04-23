@@ -6,12 +6,13 @@ import marksy from 'marksy';
 import styled, { css } from 'styled-components';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { WhiteButton } from '../components/Button';
 import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../components/Typography';
 import { ContentContext, loadAllPagePaths, loadManyContentFiles } from '../content';
 
 const Hero = styled.div`
   display: block;
-  background-color: ${({ theme }) => theme.colors.cream};
+  background-color: ${({ theme }) => theme.colors.lightOrange};
 
   padding-left: ${({ theme }) => theme.spacing[8]};
   padding-right: ${({ theme }) => theme.spacing[8]};
@@ -84,7 +85,7 @@ const SignupContainer = styled.div`
   display: block;
   width: 100%;
   padding: ${({ theme }) => theme.spacing[4]};
-  background-color: ${({ theme }) => theme.colors.red};
+  background-color: ${({ theme }) => theme.colors.blue};
 `;
 
 const SignupContent = styled.div`
@@ -117,30 +118,6 @@ const SignupHeader = styled.h3`
   }
 `;
 
-const SignupButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: ${({ theme }) => theme.spacing[3]} ${({ theme }) => theme.spacing[9]};
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[18]};
-  font-weight: ${({ theme }) => theme.fonts.weight.black};
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  color: ${({ theme }) => theme.colors.red};
-  background: ${({ theme }) => theme.colors.white};
-  border: 2px solid ${({ theme }) => theme.colors.white};
-  cursor: pointer;
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-    background: transparent;
-  }
-`;
-
 export default function Post(props) {
   const { content } = props;
 
@@ -168,9 +145,9 @@ export default function Post(props) {
       <SignupContainer>
         <SignupContent>
           <SignupHeader>{defaultCallToAction}</SignupHeader>
-          <SignupButton href={defaultMobilizeEventLink}>
+          <WhiteButton href={defaultMobilizeEventLink}>
             {defaultSignupButtonLabel}
-          </SignupButton>
+          </WhiteButton>
         </SignupContent>
       </SignupContainer>
       <Footer />
