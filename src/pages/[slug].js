@@ -4,7 +4,6 @@ import path from 'path';
 import React from 'react';
 import marksy from 'marksy';
 import styled, { css } from 'styled-components';
-import Signup, { ORANGE_PALETTE, COLUMN_DIRECTION } from '../components/Signup';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../components/Typography';
@@ -81,6 +80,67 @@ const compileMarkup = marksy({
   },
 });
 
+const SignupContainer = styled.div`
+  display: block;
+  width: 100%;
+  padding: ${({ theme }) => theme.spacing[4]};
+  background-color: ${({ theme }) => theme.colors.red};
+`;
+
+const SignupContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: ${({ theme }) => theme.max['3x']};
+  margin-left: auto;
+  margin-right: auto;
+
+  @media ${({ theme }) => theme.media.desktop} {
+    flex-direction: row;
+  }
+`;
+
+const SignupHeader = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.family};
+  font-size: ${({ theme }) => theme.fonts.size[24]};
+  font-weight: ${({ theme }) => theme.fonts.weight.bold};
+  color: ${({ theme }) => theme.colors.white};
+  text-align: center;
+  margin-bottom: ${({ theme }) => theme.spacing[7]};
+
+  @media ${({ theme }) => theme.media.desktop} {
+    margin-bottom: 0;
+    margin-right: ${({ theme }) => theme.spacing[7]};
+    text-align: left;
+  }
+`;
+
+const SignupButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: ${({ theme }) => theme.spacing[3]} ${({ theme }) => theme.spacing[9]};
+  font-family: ${({ theme }) => theme.fonts.family};
+  font-size: ${({ theme }) => theme.fonts.size[18]};
+  font-weight: ${({ theme }) => theme.fonts.weight.black};
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  color: ${({ theme }) => theme.colors.red};
+  background: ${({ theme }) => theme.colors.white};
+  border: 2px solid ${({ theme }) => theme.colors.white};
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.white};
+    background: transparent;
+  }
+`;
+
 export default function Post(props) {
   const { content } = props;
 
@@ -88,6 +148,8 @@ export default function Post(props) {
     pageTitle,
     pageContent,
     defaultMobilizeEventLink,
+    defaultCallToAction,
+    defaultSignupButtonLabel,
   } = content;
 
   const finalPageContent = (pageContent || '').replace('%%defaultMobilizeEventLink%%', defaultMobilizeEventLink);
@@ -103,7 +165,14 @@ export default function Post(props) {
           {compileMarkup(finalPageContent).tree}
         </Content>
       </MainSection>
-      <Signup palette={ORANGE_PALETTE} />
+      <SignupContainer>
+        <SignupContent>
+          <SignupHeader>{defaultCallToAction}</SignupHeader>
+          <SignupButton href={defaultMobilizeEventLink}>
+            {defaultSignupButtonLabel}
+          </SignupButton>
+        </SignupContent>
+      </SignupContainer>
       <Footer />
     </ContentContext.Provider>
   );
