@@ -66,7 +66,7 @@ export default function _404(props) {
 
 export async function getStaticProps(context) {
   const content = await loadManyContentFiles(fs, path, [
-    'pages/404',
+    'components/404',
     'components/nav',
     'components/footer',
   ]);
