@@ -223,8 +223,8 @@ const StepCard = styled.div`
     display: block;
     position: absolute;
     z-index: -1;
-    top: ${({ theme }) => theme.spacing[4]};
-    left: ${({ theme }) => theme.spacing[4]};
+    top: ${({ theme }) => theme.spacing[8]};
+    left: ${({ theme }) => theme.spacing[8]};
     width: 100%;
     height: 100%;
     background-color: ${({ theme }) => theme.colors.lightBlue};
