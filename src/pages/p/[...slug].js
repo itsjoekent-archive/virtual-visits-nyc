@@ -84,6 +84,15 @@ const PageHeader = styled(BaseHeader)`
   margin-bottom: ${({ theme }) => theme.spacing[7]};
 `;
 
+const PageSubHeader = styled(BaseHeader)`
+  font-size: ${({ theme }) => theme.fonts.size[18]};
+  margin-bottom: ${({ theme }) => theme.spacing[4]};
+
+  @media ${({ theme }) => theme.media.desktop} {
+    font-size: ${({ theme }) => theme.fonts.size[24]};
+  }
+`;
+
 const PageCopy = styled(BaseParagraph)`
   margin-bottom: ${({ theme }) => theme.spacing[7]};
   max-width: ${({ theme }) => theme.max['2x']};
@@ -94,6 +103,7 @@ const compileMarkup = marksy({
   createElement: React.createElement,
   elements: {
     h2: PageHeader,
+    h3: PageSubHeader,
     a: BaseLink,
     p: PageCopy,
   },
@@ -147,7 +157,9 @@ export default function Post(props) {
     defaultSignupButtonLabel,
   } = content;
 
-  const finalPageContent = (pageContent || '').replace('%%defaultMobilizeEventLink%%', defaultMobilizeEventLink);
+  const finalPageContent = (pageContent || '')
+    .replace('%%defaultMobilizeEventLink%%', defaultMobilizeEventLink)
+    .split('\n').map((line) => `${line}\n\n`).join('\n');
 
   return (
     <ContentContext.Provider value={content}>
