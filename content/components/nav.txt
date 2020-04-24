@@ -8,13 +8,13 @@ About
 Conversation starters
 
 @volunteerHelpAnchor
-/conversation-starters
+/p/conversation-starters
 
 @resourcesLabel
 Resources for seniors
 
 @resourcesAnchor
-/resources-for-seniors
+/p/resources-for-seniors
 
 @navLabels
 aboutLabel,volunteerHelpLabel,resourcesLabel

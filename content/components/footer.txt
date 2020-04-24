@@ -5,14 +5,13 @@ About Us
 About the Neighbor Network:::/p/about
 About Greenwich House:::https://www.greenwichhouse.org/about/
 Contact Us:::/
-FAQ:::/faq
 
 @footerVolunteerTitle
 Volunteer Help
 
 @footerVolunteerLinks
-Call Script:::/call-script
-Conversation Starters:::/conversation-starters
+Call Script:::/p/call-script
+Conversation Starters:::/p/conversation-starters
 Resend my matches:::/
 Unsubscribe from matching:::/
 
@@ -20,7 +19,7 @@ Unsubscribe from matching:::/
 Help for older adults
 
 @footerSeniorLinks
-Resources for seniors:::/resources-for-seniors
+Resources for seniors:::/p/resources-for-seniors
 
 @footerLists
 footerAbout,footerVolunteer,footerSenior
