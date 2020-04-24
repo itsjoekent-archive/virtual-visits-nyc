@@ -4,11 +4,11 @@ import path from 'path';
 import React from 'react';
 import marksy from 'marksy';
 import styled, { css } from 'styled-components';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import { WhiteButton } from '../components/Button';
-import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../components/Typography';
-import { ContentContext, loadAllPagePaths, loadManyContentFiles } from '../content';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
+import { WhiteButton } from '../../components/Button';
+import { BaseHeader, BaseLink, BaseParagraph, BaseTitle } from '../../components/Typography';
+import { ContentContext, loadAllPagePaths, loadManyContentFiles } from '../../content';
 
 const Hero = styled.div`
   display: flex;
@@ -194,7 +194,8 @@ export async function getStaticPaths() {
   const pages = loadAllPagePaths(fs, path);
 
   return {
-    paths: pages.map((page) => ({ params: { slug: page } })),
+    paths: pages.map((page) => ({ params: { slug: [page] } })),
+    // paths: pages.map((page) => ({ params: { slug: page } })),
     fallback: false,
   };
 }

@@ -48,6 +48,7 @@ const Link = styled(BaseLink)`
 export default function _404(props) {
   const { content } = props;
 
+  return null;
   return (
     <ContentContext.Provider value={content}>
       <Navigation />

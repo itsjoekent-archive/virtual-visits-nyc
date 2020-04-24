@@ -2,7 +2,7 @@
 About
 
 @aboutAnchor
-/about
+/p/about
 
 @volunteerHelpLabel
 Conversation starters
