@@ -9,6 +9,9 @@ These regular calls help to fight social isolation, connect older New Yorkers wi
 @homepageHeroCta
 Sign up now for a virtual training to get started making calls.
 
+@homepageStepsCallToActionHeader
+Steps to volunteering: 
+
 @homepageStepOneLabel
 step one (60 mins)
 
@@ -16,16 +19,16 @@ step one (60 mins)
 Virtual Training
 
 @homepageStepOneCopy
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Attend a short online video training with other volunteers covering how to make calls, tips for your conversations, and when and how to reach out for help.
 
 @homepageStepTwoLabel
 step two (30-60 mins)
 
 @homepageStepTwoTitle
-Match with at least three seniors
+Match with 1-3 seniors
 
 @homepageStepTwoCopy
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Make short introductory calls to seniors until you connect with 1-3 who want to receive ongoing calls
 
 @homepageStepThreeLabel
 step three (60 mins/week)
@@ -34,7 +37,7 @@ step three (60 mins/week)
 Build a friendly relationship!
 
 @homepageStepThreeCopy
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Build relationships with your senior neighbors by calling them twice a week for the duration of the COVID-19 crisis 
 
 @homepageSteps
 homepageStepOne,homepageStepTwo,homepageStepThree
@@ -58,7 +61,7 @@ New York City Councilmember for the 39th District
 About Neighbor Network
 
 @homepageAboutCopy
-The Neighbor Network is an initiative aiming to deploy volunteers to call seniors in New York City for the duration of the COVID-19 crisis. These calls help fight social isolation, connect older adults with needed resources, and build relationships that will benefit both seniors and volunteers.
+The Neighbor Network matches volunteers with seniors to call in New York City during the COVID-19 crisis. These regular calls help to fight social isolation, connect older New Yorkers with the resources they need, and build relationships that will bring joy and comfort to seniors and volunteers alike.
 
 @homepageAboutLinkLabel
 Read more about Neighbor Network
