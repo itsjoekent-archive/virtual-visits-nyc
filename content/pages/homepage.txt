@@ -9,9 +9,6 @@ These regular calls help to fight social isolation, connect older New Yorkers wi
 @homepageHeroCta
 Sign up now for a virtual training to get started making calls.
 
-@homepageStepsCallToActionHeader
-Steps to volunteering: 
-
 @homepageStepOneLabel
 step one (60 mins)
 
