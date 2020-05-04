@@ -40,7 +40,7 @@ Build relationships with your senior neighbors by calling them twice a week for 
 homepageStepOne,homepageStepTwo,homepageStepThree
 
 @homepageStepsCallToActionHeader
-Sign up now for a virtual training to get started
+Sign up now for a virtual training to get started!
 
 @homepageStepsCallToActionCopy
 Start building relationships with seniors who are facing social isolation due to COVID-19
