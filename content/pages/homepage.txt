@@ -7,7 +7,7 @@ The Neighbor Network matches volunteers with seniors to call in New York City du
 These regular calls help to fight social isolation, connect older New Yorkers with the resources they need, and build relationships that will bring joy and comfort to seniors and volunteers alike.
 
 @homepageHeroCta
-Sign up now for a virtual training to get started making calls.
+Sign up now for a virtual training to get started making calls!
 
 @homepageStepOneLabel
 step one (60 mins)
