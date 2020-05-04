@@ -134,75 +134,24 @@ const StepsSection = styled.section`
   @media ${({ theme }) => theme.media.desktop} {
     padding-top: ${({ theme }) => theme.spacing[7]};
     padding-bottom: ${({ theme }) => theme.spacing[9]};
-
-    &:after, &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 8px;
-    }
-
-    &:before {
-      background-color: ${({ theme }) => theme.colors.blue};
-      top: -${({ theme }) => theme.spacing[7]};
-      height: calc(100% - ${({ theme }) => theme.spacing[2]});
-      left: calc(50% - ${({ theme }) => theme.spacing[9]});
-      z-index: -10;
-    }
-
-    &:after {
-      background-color: ${({ theme }) => theme.colors.lightBlue};
-      top: ${({ theme }) => theme.spacing[2]};
-      height: calc(100% - ${({ theme }) => theme.spacing[8]});
-      left: calc(50% - ${({ theme }) => theme.spacing[9]} + 4px);
-      z-index: -11;
-    }
-  }
-`;
-
-const StepsSectionTitleRow = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: ${({ theme }) => theme.spacing[11]};
-
-  @media ${({ theme }) => theme.media.desktop} {
-    margin-bottom: 0;
   }
 `;
 
 const StepsSectionTitle = styled.h2`
   font-family: ${({ theme }) => theme.fonts.family};
-  font-size: 96px;
+  font-size: 28px;
   font-weight: ${({ theme }) => theme.fonts.weight.black};
-  font-style: italic;
   color: ${({ theme }) => theme.colors.blue};
-  text-transform: uppercase;
-  line-height: 1;
-  margin-left: -20px;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    margin-left: -24px;
-  }
+  line-height: 1.1;
+  text-align: left;
+  width: 100%;
+  padding-left: ${({ theme }) => theme.spacing[7]};
+  padding-right: ${({ theme }) => theme.spacing[7]};
 
   @media ${({ theme }) => theme.media.desktop} {
-    font-size: 128px;
+    font-size: 48px;
+    text-align: center;
   }
-
-  @media (min-width: 1600px) {
-    font-size: 196px;
-    margin-left: -36px;
-  }
-`;
-
-const StepsSectionSubtitle = styled.h2`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[14]};
-  font-weight: ${({ theme }) => theme.fonts.weight.regular};
-  font-style: italic;
-  color: ${({ theme }) => theme.colors.blue};
-  text-transform: uppercase;
-  margin-left: ${({ theme }) => theme.spacing[4]};
 `;
 
 const StepCard = styled.div`
@@ -211,7 +160,7 @@ const StepCard = styled.div`
   width: calc(100% - ${({ theme }) => theme.spacing[7]});
   position: relative;
   background-color: ${({ theme }) => theme.colors.white};
-  padding: ${({ theme }) => theme.spacing[7]} ${({ theme }) => theme.spacing[8]};
+  padding: ${({ theme }) => theme.spacing[9]} ${({ theme }) => theme.spacing[8]};
 
   @media ${({ theme }) => theme.media.tablet} {
     width: 100%;
@@ -242,7 +191,7 @@ const StepCard = styled.div`
 const StepsSectionRow = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   max-width: calc(${({ theme }) => theme.max['2x']} * 2);
   margin-left: auto;
@@ -260,21 +209,21 @@ const StepsSectionRow = styled.div`
   }
 
   @media ${({ theme }) => theme.media.tablet} {
-    &:nth-child(even) {
-      justify-content: flex-start;
+    &:nth-child(even) ${StepCard} {
+      margin-left: -100px;
+    }
+
+    &:nth-child(odd) ${StepCard} {
+      margin-left: 100px;
     }
   }
+`;
 
-  @media ${({ theme }) => theme.media.desktop} {
-    &:first-of-type {
-      margin-top: -${({ theme }) => theme.spacing[12]};
-    }
-  }
+const StepsSectionTitleRow = styled(StepsSectionRow)`
+  margin-bottom: ${({ theme }) => theme.spacing[7]};
 
-  @media (min-width: 1600px) {
-    &:first-of-type {
-      margin-top: calc(-${({ theme }) => theme.spacing[12]} * 2);
-    }
+  @media ${({ theme }) => theme.media.tablet} {
+    margin-bottom: ${({ theme }) => theme.spacing[8]};
   }
 `;
 
@@ -288,6 +237,7 @@ const StepCardDetail = styled.p`
 `;
 
 const StepCardHeader = styled(BaseHeader)`
+  line-height: 1.1;
   color: ${({ theme }) => theme.colors.blue};
   text-transform: uppercase;
   margin-bottom: ${({ theme }) => theme.spacing[7]};
@@ -309,6 +259,7 @@ const PostStepsHeader = styled.h2`
   font-family: ${({ theme }) => theme.fonts.family};
   font-size: ${({ theme }) => theme.fonts.size[36]};
   font-weight: ${({ theme }) => theme.fonts.weight.bold};
+  line-height: 1.2;
   color: ${({ theme }) => theme.colors.blue};
   text-align: center;
   margin-bottom: ${({ theme }) => theme.spacing[7]};
@@ -416,7 +367,6 @@ export default function Homepage(props) {
     homepageSubtitle,
     homepageHeroCta,
     homepageStepsTitle,
-    homepageStepsSubtitle,
     homepageSteps,
     homepageStepsCallToActionHeader,
     homepageStepsCallToActionCopy,
@@ -456,14 +406,9 @@ export default function Homepage(props) {
       </HeroSection>
       <StepsSection>
         <StepsSectionTitleRow>
-          {homepageStepsTitle.split(',').map((word) => (
-            <StepsSectionTitle key={word}>
-              {word}
-            </StepsSectionTitle>
-          ))}
-          <StepsSectionSubtitle>
-            {homepageStepsSubtitle}
-          </StepsSectionSubtitle>
+          <StepsSectionTitle>
+            {homepageStepsTitle}
+          </StepsSectionTitle>
         </StepsSectionTitleRow>
         <div>
           {mapSteps(homepageSteps, content).map(({
