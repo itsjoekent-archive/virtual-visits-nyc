@@ -15,60 +15,61 @@ Hello [NAME], this is [VOL NAME]. I’m a neighbor/community volunteer calling t
 
 1) Hello [NAME], this is [VOL NAME]. I’m a neighbor/community volunteer calling to check in during this time of crisis. We know this is a stressful time for everyone, and we want to help keep all our neighbors connected.
 
-2. Do you have a moment to talk about how you are doing? 
+2) Do you have a moment to talk about how you are doing? 
 [If Yes] Wonderful, thank you. I’m glad to talk to you
 [If No] Ok, no problem, thank you. If you decide you would like to talk to someone with our group, you can call us back at XXX-XXX-XXXX. 
 [If Unsure] Ok, no problem. I’m calling as a part of a program intended to reach people who may be sheltering in place to protect against the coronavirus outbreak. I just want to make sure that you have the information and the resources that you need to stay safe and healthy. It will only take a few minutes!
 
-3. Have you been following the news about the COVID-19 coronavirus outbreak, and the city’s recommendations for New Yorkers?
+3) Have you been following the news about the COVID-19 coronavirus outbreak, and the city’s recommendations for New Yorkers?
 -Yes
 -No
 -Unsure
 [If no or unsure] Ok, coronavirus, otherwise known as COVID-19, is the virus that has affected people in many countries including in the United States, and cases are rapidly increasing in New York City. The most common symptoms are fever, cough, loss of taste and smell, and shortness of breath. We’re checking in on neighbors who may be at risk to make sure that you’re connected to what you need to stay healthy during this time. 
 
-4. Do you have family or friends who are checking in regularly? How often do you speak to them? 
+4) Do you have family or friends who are checking in regularly? How often do you speak to them? 
 -Every day
 -2-3 times a week
 -Once a week
 -No, don’t really have anyone like that
 
-5. Do you have someone, a friend or family member, a home health aide, or an organization, you can call if you need help getting food, supplies, medication, or anything like that?
+5) Do you have someone, a friend or family member, a home health aide, or an organization, you can call if you need help getting food, supplies, medication, or anything like that?
 -Yes, a relative
 -Yes, a friend
 -Yes, a home health aide, case worker, or organization 
 -No 
 
-6. How are you feeling today?
+6) How are you feeling today?
 
-7. How often do you leave your house for a walk, to go to the grocery store or pharmacy, or a visit to the park? 
+7) How often do you leave your house for a walk, to go to the grocery store or pharmacy, or a visit to the park? 
 -Stay inside all the time
 -Go out once a week
 -Go out 2 or 3 times a week
 -Go out every day
 
-8. Do you have enough food for the week? 
+8) Do you have enough food for the week? 
 -Yes
 -No 
 [If not, and they need help accessing food, you can check the resource list.]
 
-9. Have you had a chance to fill out the Census yet?
+9) Have you had a chance to fill out the Census yet?
 -Yes 
 -No, but I plan to
 -No, and I will not
 [If yes] That’s wonderful. Thank you.
 [If no and they don't plan to] OK, I know it’s been a really stressful time. But it just takes about 10 minutes, and it’s really important to make sure our community gets all the resources we deserve. Can I walk you through how to do it?
 
-10. Laughter relieves stress and can improve your immune system; would you like to hear a joke or a riddle before we end this call?
+10) Laughter relieves stress and can improve your immune system; would you like to hear a joke or a riddle before we end this call?
 -Yes
 -No
 [If yes: you can use one of these joke catalogs, or tell your own.]
 https://thoughtcatalog.com/brandon-gorrell/2015/03/50-short-clean-jokes-and-puns-that-will-get-a-laugh-every-time/
 https://thoughtcatalog.com/erin-cossetta/2018/06/laffy-taffy-jokes/
 
-11. Would you like to talk again in the next few days? I’m stuck in my house, too, and I’d love to keep talking.
+11) Would you like to talk again in the next few days? I’m stuck in my house, too, and I’d love to keep talking.
 Yes
 No 
-12. Are there any questions you have for me?  
+
+12) Are there any questions you have for me?  
 [Open ended; listen to hear potential critical needs.]
 
 
