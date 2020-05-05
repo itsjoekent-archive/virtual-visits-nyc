@@ -13,7 +13,7 @@ Hello [NAME], this is [VOL NAME]. I’m a neighbor/community volunteer calling t
 
 ### If individual answers:
 
-1. Hello [NAME], this is [VOL NAME]. I’m a neighbor/community volunteer calling to check in during this time of crisis. We know this is a stressful time for everyone, and we want to help keep all our neighbors connected.
+1) Hello [NAME], this is [VOL NAME]. I’m a neighbor/community volunteer calling to check in during this time of crisis. We know this is a stressful time for everyone, and we want to help keep all our neighbors connected.
 
 2. Do you have a moment to talk about how you are doing? 
 [If Yes] Wonderful, thank you. I’m glad to talk to you
