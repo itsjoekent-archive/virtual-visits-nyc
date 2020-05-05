@@ -36,6 +36,7 @@ const LinksContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -53,6 +54,40 @@ const Link = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.colors.blue};
+  }
+`;
+
+const SublinksContainer = styled.div`
+  display: none;
+  position: relative;
+
+  @media ${({ theme }) => theme.media.tablet} {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      display: none;
+    }
+
+    ${Link} {
+      padding-right: ${({ theme }) => theme.spacing[4]};
+      cursor: pointer;
+    }
+
+    &:hover ul {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      position: absolute;
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-top: 24px;
+      padding-left: 8px;
+      left: -4px;
+      border-left: 2px solid ${({ theme }) => theme.colors.blue};
+    }
   }
 `;
 
@@ -197,12 +232,8 @@ export default function Navigation() {
     menuButtonLabel,
     takeoverCloseLabel,
     logoAltText,
-    navLabels: navLabelsStringified = '',
-    navLinks: navLinksStringified = '',
+    navLinks,
   } = content;
-
-  const navLabels = mapContentString(navLabelsStringified, content);
-  const navLinks = mapContentString(navLinksStringified, content);
 
   const takeoverRef = React.useRef(null);
 
@@ -242,6 +273,35 @@ export default function Navigation() {
     setIsTakeoverFading(true);
   }
 
+  function mapLinks(list, wrapSublinks = false) {
+    const listArray = list.split('\n');
+
+    return listArray.map((out) => {
+      const [label, target] = out.split(':::');
+
+      if (target.startsWith('list=')) {
+        const referenceId = target.split('list=')[1];
+
+        if (wrapSublinks) {
+          return (
+            <SublinksContainer key={label}>
+              <Link as="p">{label}</Link>
+              <ul>
+                {mapLinks(content[referenceId], wrapSublinks)}
+              </ul>
+            </SublinksContainer>
+          );
+        }
+
+        return mapLinks(content[referenceId], wrapSublinks);
+      }
+
+      return (
+        <Link key={label} href={target}>{label}</Link>
+      );
+    });
+  }
+
   return (
     <React.Fragment>
       <NavigationContainer>
@@ -254,9 +314,7 @@ export default function Navigation() {
             {menuButtonLabel}
           </TakeoverToggle>
           <LinksContainer>
-            {navLabels.map((label, index) => (
-              <Link key={label} href={navLinks[index]}>{label}</Link>
-            ))}
+            {mapLinks(navLinks, true)}
           </LinksContainer>
         </NavigationContent>
       </NavigationContainer>
@@ -275,9 +333,7 @@ export default function Navigation() {
           </TakeoverToggle>
         </TakeoverNavigationRow>
         <LinksContainer>
-          {navLabels.map((label, index) => (
-            <Link key={label} href={navLinks[index]}>{label}</Link>
-          ))}
+          {mapLinks(navLinks)}
         </LinksContainer>
       </TakeoverContainer>
     </React.Fragment>

@@ -1,26 +1,13 @@
-@aboutLabel
-About
-
-@aboutAnchor
-/p/about
-
-@volunteerHelpLabel
-Conversation starters
-
-@volunteerHelpAnchor
-/p/conversation-starters
-
-@resourcesLabel
-Resources for seniors
-
-@resourcesAnchor
-/p/resources-for-seniors
-
-@navLabels
-aboutLabel,volunteerHelpLabel,resourcesLabel
-
 @navLinks
-aboutAnchor,volunteerHelpAnchor,resourcesAnchor
+About:::/p/about
+Volunteer Help:::list=volunteerHelpList
+Resources for seniors:::/p/resources-for-seniors
+
+@volunteerHelpList
+Call Script:::/p/call-script
+Conversation Starters:::/p/conversation-starters
+Resend my matches:::/
+Unsubscribe from matching:::/
 
 @menuButtonLabel
 Menu
