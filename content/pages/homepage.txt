@@ -67,4 +67,4 @@ The Neighbor Network matches volunteers with seniors to call in New York City du
 Read more about Neighbor Network
 
 @homepageAboutLinkTarget
-/about
+/p/about

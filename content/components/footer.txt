@@ -10,7 +10,7 @@ Contact Us:::/
 Volunteer Help
 
 @footerVolunteerLinks
-Call Script:::/p/call-script
+Initial Call Script:::/p/initial-call-script
 Conversation Starters:::/p/conversation-starters
 Resend my matches:::/
 Unsubscribe from matching:::/

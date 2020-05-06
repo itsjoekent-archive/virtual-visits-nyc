@@ -1,10 +1,10 @@
 const theme = {
   colors: {
     black: '#030411',
-    lightOrange: '#FFEABC',
-    orange: '#FED370',
-    lightBlue: '#747AE6',
-    blue: '#4951DE',
+    lightOrange: '#FFF0C5',
+    orange: '#ffdc79',
+    lightBlue: '#3d40d9',
+    blue: '#2528BE',
     white: '#FFFFFF',
   },
   fonts: {
