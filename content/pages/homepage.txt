@@ -49,7 +49,7 @@ Check back soon to sign up for a virtual training and get started!
 Start building relationships with seniors who are facing social isolation due to COVID-19
 
 @homepageQuote
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+In times of crisis, New Yorkers look out for each other. As coronavirus keeps older adults home-bound for months on end, regular calls through the neighbor network help to connect people to support, to prevent social isolation from gnawing deeper, to build relationships that sustain us through this challenging time, and to bring a little joy into lonely days on both sides of the phone line.
 
 @homepageQuoteAuthor
 Brad Lander
