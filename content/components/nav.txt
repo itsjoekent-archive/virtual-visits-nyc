@@ -5,7 +5,7 @@ Resources for seniors:::/p/resources-for-seniors
 
 @volunteerHelpList
 Initial Call Script:::/p/initial-call-script
-Conversation Starters:::/p/conversation-starters
+Conversation Tips:::/p/conversation-starters
 Resend my matches:::/
 Unsubscribe from matching:::/
 
