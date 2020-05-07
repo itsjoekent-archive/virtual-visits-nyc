@@ -12,6 +12,7 @@ Volunteer Help
 @footerVolunteerLinks
 Initial Call Script:::/p/initial-call-script
 Conversation Tips:::/p/conversation-starters
+Volunteer Guide:::https://docs.google.com/document/d/1BhHs96g_Py-fM-qweagoCdqsyL-41A99u9Eih9ZhHh4/edit?usp=sharing
 Resend my matches:::/
 Unsubscribe from matching:::/
 
