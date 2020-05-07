@@ -25,6 +25,8 @@ The [Get Food NYC map](https://www.arcgis.com/apps/webappviewer/index.html?id=35
 **Mutual Aid**
 [Information on mutual aid groups by neighborhood.](http://mutualaid.nyc/groups/) Specific services will vary by group, but many can help pick up necessary pharmacy and grocery items.
 
+Community Care NYC (West Village mutual aid): call our hotline number (661.381.1206) to reach volunteers. Volunteers can run errands, assist with tasks at home, and otherwise be of assistance to those at-risk and sheltering in place.
+
 **Domestic Violence Hotline**
 Call 1-800-799-7233 or 1-800-787-3224 for TTY, or if you’re unable to speak safely, you can log onto [thehotline.org](https://thehotline.org) or text LOVEIS to 22522.
 
