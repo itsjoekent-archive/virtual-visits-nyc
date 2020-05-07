@@ -11,7 +11,7 @@ Volunteer Help
 
 @footerVolunteerLinks
 Initial Call Script:::/p/initial-call-script
-Conversation Starters:::/p/conversation-starters
+Conversation Tips:::/p/conversation-starters
 Resend my matches:::/
 Unsubscribe from matching:::/
 
