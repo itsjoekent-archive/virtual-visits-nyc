@@ -1,5 +1,5 @@
 @pageTitle
-Contact us
+Contact Us
 
 @pageContent
 ## Questions or comments? 
