@@ -7,7 +7,7 @@ About Greenwich House:::https://www.greenwichhouse.org/about/
 Contact Us:::/p/contact-us
 
 @footerVolunteerTitle
-Volunteer Help
+Resources for Volunteers 
 
 @footerVolunteerLinks
 Initial Call Script:::/p/initial-call-script
