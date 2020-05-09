@@ -1,6 +1,6 @@
 @navLinks
 About:::/p/about
-Volunteer Help:::list=volunteerHelpList
+Resources for volunteers:::list=volunteerHelpList
 Resources for seniors:::/p/resources-for-seniors
 
 @volunteerHelpList
