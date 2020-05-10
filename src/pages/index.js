@@ -323,17 +323,11 @@ const QuoteContainer = styled.div`
 
 const Quote = styled.p`
   font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[24]};
+  font-size: ${({ theme }) => theme.fonts.size[18]};
   font-weight: ${({ theme }) => theme.fonts.weight.regular};
   font-style: italic;
   color: ${({ theme }) => theme.colors.black};
-  text-transform: uppercase;
-  letter-spacing: 1px;
   margin-bottom: ${({ theme }) => theme.spacing[7]};
-
-  @media ${({ theme }) => theme.media.tablet} {
-    font-size: ${({ theme }) => theme.fonts.size[28]};
-  }
 `;
 
 const QuoteAuthor = styled.p`
