@@ -282,69 +282,6 @@ const PostStepsCopy = styled.p`
   }
 `;
 
-const QuoteContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  &:after, &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 8px;
-  }
-
-  &:before {
-    background-color: ${({ theme }) => theme.colors.blue};
-    top: 0;
-    height: 100%;
-    left: -${({ theme }) => theme.spacing[6]};
-    z-index: -10;
-  }
-
-  &:after {
-    background-color: ${({ theme }) => theme.colors.lightBlue};
-    top: ${({ theme }) => theme.spacing[2]};
-    height: 100%;
-    left: calc(-${({ theme }) => theme.spacing[6]} + 4px);
-    z-index: -11;
-  }
-
-  @media ${({ theme }) => theme.media.tablet} {
-    &:before {
-      left: -${({ theme }) => theme.spacing[7]};
-    }
-
-    &:after {
-      left: calc(-${({ theme }) => theme.spacing[7]} + 4px);
-    }
-  }
-`;
-
-const Quote = styled.p`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[18]};
-  font-weight: ${({ theme }) => theme.fonts.weight.regular};
-  font-style: italic;
-  color: ${({ theme }) => theme.colors.black};
-  margin-bottom: ${({ theme }) => theme.spacing[7]};
-`;
-
-const QuoteAuthor = styled.p`
-  font-family: ${({ theme }) => theme.fonts.family};
-  font-size: ${({ theme }) => theme.fonts.size[18]};
-  font-weight: ${({ theme }) => theme.fonts.weight.bold};
-  color: ${({ theme }) => theme.colors.blue};
-  text-transform: uppercase;
-  letter-spacing: 1px;
-`;
-
-const QuoteTitle = styled(QuoteAuthor)`
-  font-size: ${({ theme }) => theme.fonts.size[14]};
-  font-weight: ${({ theme }) => theme.fonts.weight.regular};
-  color: ${({ theme }) => theme.colors.lightBlue};
-`;
-
 const AboutHeader = styled(BaseHeader)`
   margin-bottom: ${({ theme }) => theme.spacing[7]};
 `;
@@ -431,13 +368,6 @@ export default function Homepage(props) {
           {defaultSignupButtonLabel}
         </BlueButton>
       </PostStepsSection>
-      {/* <PostStepsSection>
-        <QuoteContainer>
-          <Quote>"{homepageQuote}"</Quote>
-          <QuoteAuthor>{homepageQuoteAuthor}</QuoteAuthor>
-          <QuoteTitle>{homepageQuoteTitle}</QuoteTitle>
-        </QuoteContainer>
-      </PostStepsSection> */}
       <PostStepsSection>
         <AboutHeader>{homepageAboutHeader}</AboutHeader>
         <AboutParagraph>{homepageAboutCopy}</AboutParagraph>

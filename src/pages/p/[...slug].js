@@ -78,6 +78,100 @@ const Content = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: ${({ theme }) => theme.spacing[7]};
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: ${({ theme }) => theme.spacing[9]};
+
+    span {
+      display: block;
+      flex: 1 0 0px;
+
+      padding-left: ${({ theme }) => theme.spacing[4]};
+      padding-right: ${({ theme }) => theme.spacing[4]};
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  blockquote {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: ${({ theme }) => theme.spacing[9]};
+
+    &:after, &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 8px;
+    }
+
+    &:before {
+      background-color: ${({ theme }) => theme.colors.blue};
+      top: 0;
+      height: 100%;
+      left: -${({ theme }) => theme.spacing[6]};
+      z-index: -10;
+    }
+
+    &:after {
+      background-color: ${({ theme }) => theme.colors.lightBlue};
+      top: ${({ theme }) => theme.spacing[2]};
+      height: 100%;
+      left: calc(-${({ theme }) => theme.spacing[6]} + 4px);
+      z-index: -11;
+    }
+
+    @media ${({ theme }) => theme.media.tablet} {
+      &:before {
+        left: -${({ theme }) => theme.spacing[7]};
+      }
+
+      &:after {
+        left: calc(-${({ theme }) => theme.spacing[7]} + 4px);
+      }
+    }
+
+    p {
+      font-family: ${({ theme }) => theme.fonts.family};
+      font-size: ${({ theme }) => theme.fonts.size[18]};
+      font-weight: ${({ theme }) => theme.fonts.weight.regular};
+      font-style: italic;
+      color: ${({ theme }) => theme.colors.black};
+      margin-bottom: ${({ theme }) => theme.spacing[7]};
+    }
+
+    footer {
+      font-family: ${({ theme }) => theme.fonts.family};
+      font-size: ${({ theme }) => theme.fonts.size[18]};
+      font-weight: ${({ theme }) => theme.fonts.weight.bold};
+      color: ${({ theme }) => theme.colors.blue};
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    cite {
+      display: block;
+      font-size: ${({ theme }) => theme.fonts.size[14]};
+      font-weight: ${({ theme }) => theme.fonts.weight.regular};
+      font-style: normal;
+      color: ${({ theme }) => theme.colors.lightBlue};
+    }
+  }
+
 `;
 
 const PageHeader = styled(BaseHeader)`
@@ -101,6 +195,19 @@ const PageCopy = styled(BaseParagraph)`
 
 const compileMarkup = marksy({
   createElement: React.createElement,
+  components: {
+    QuoteBlock: (props) => {
+      const { quote, author, title } = props;
+
+      return (
+        <QuoteContainer>
+          <Quote>"{quote}"</Quote>
+          <QuoteAuthor>{author}</QuoteAuthor>
+          <QuoteTitle>{title}</QuoteTitle>
+        </QuoteContainer>
+      );
+    },
+  },
   elements: {
     h2: PageHeader,
     h3: PageSubHeader,

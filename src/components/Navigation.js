@@ -72,21 +72,52 @@ const SublinksContainer = styled.div`
     ${Link} {
       padding-right: ${({ theme }) => theme.spacing[4]};
       cursor: pointer;
+      z-index: 1;
     }
 
-    &:hover ul {
-      display: flex;
-      flex-direction: column;
-      width: 300px;
-      position: absolute;
-      padding-left: 0;
-      list-style: none;
-      margin-bottom: 0;
-      margin-top: 0;
-      padding-top: 24px;
-      padding-left: 8px;
-      left: -4px;
-      border-left: 2px solid ${({ theme }) => theme.colors.blue};
+    &:hover {
+      > ${Link} {
+        color: ${({ theme }) => theme.colors.blue};
+      }
+
+      > div {
+        padding-top: ${({ theme }) => theme.spacing[7]};
+        position: absolute;
+        left: 0;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: calc(${({ theme }) => theme.spacing[7]} - 5px);
+          left: calc(50% - 2.5px);
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid ${({ theme }) => theme.colors.blue};
+        }
+      }
+
+      > div ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+        border: 2px solid ${({ theme }) => theme.colors.lightBlue};
+
+        ${Link} {
+          background-color: ${({ theme }) => theme.colors.white};
+          padding: ${({ theme }) => theme.spacing[2]} ${({ theme }) => theme.spacing[4]};
+
+          &:hover {
+            color: ${({ theme }) => theme.colors.white};
+            background-color: ${({ theme }) => theme.colors.blue};
+          }
+        }
+      }
     }
   }
 `;
@@ -286,9 +317,11 @@ export default function Navigation() {
           return (
             <SublinksContainer key={label}>
               <Link as="p">{label}</Link>
-              <ul>
-                {mapLinks(content[referenceId], wrapSublinks)}
-              </ul>
+              <div>
+                <ul>
+                  {mapLinks(content[referenceId], wrapSublinks)}
+                </ul>
+              </div>
             </SublinksContainer>
           );
         }

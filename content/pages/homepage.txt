@@ -48,17 +48,8 @@ Sign up for a virtual training to get started
 @homepageStepsCallToActionCopy
 Start building relationships with seniors who are facing social isolation due to COVID-19
 
-@homepageQuote
-In times of crisis, New Yorkers look out for each other. As coronavirus keeps older adults home-bound for months on end, regular calls through the neighbor network help to connect people to support, to prevent social isolation from gnawing deeper, to build relationships that sustain us through this challenging time, and to bring a little joy into lonely days on both sides of the phone line.
-
-@homepageQuoteAuthor
-Brad Lander
-
-@homepageQuoteTitle
-New York City Councilmember for the 39th District
-
 @homepageAboutHeader
-Our Partners 
+Our Partners
 
 @homepageAboutCopy
 The Neighbor Network is built on a partnership between Greenwich House, Heights & Hills, the New York Civic Engagement Table and the Office of NYC Council Member Brad Lander.

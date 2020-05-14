@@ -6,9 +6,30 @@ About
 
 The Neighbor Network matches volunteers with seniors to call in New York City during the COVID-19 crisis. These regular calls help to fight social isolation, connect older New Yorkers with the resources they need, and build relationships that will bring joy and comfort to seniors and volunteers alike. The project is built on a partnership between Greenwich House, Heights & Hills, the New York Civic Engagement Table and the Office of NYC Council Member Brad Lander.
 
+<blockquote>
+  <p>In times of crisis, New Yorkers look out for each other. As coronavirus keeps older adults home-bound for months on end, regular calls through the neighbor network help to connect people to support, to prevent social isolation from gnawing deeper, to build relationships that sustain us through this challenging time, and to bring a little joy into lonely days on both sides of the phone line.</p>
+  <footer>Brad Lander <cite>New York City Council Member for the 39th District</cite></footer>
+</blockquote>
+
+## Our Partners
+
+The Neighbor Network is built on a partnership between Greenwich House, Heights & Hills, the New York Civic Engagement Table and the Office of NYC Council Member Brad Lander.
+
+<div class="gallery">
+  <span>
+    <img src="/greenwich-house.png" alt="Greenwich House logo" />
+  </span>
+  <span>
+    <img src="/heights-hills.jpg" alt="Heights & Hills logo" />
+  </span>
+  <span>
+    <img src="/nycet.jpg" alt="New York Civic Engagement Table logo" />
+  </span>
+</div>
+
 ## Why now?
 
-Because older adults face a higher health risk due to COVID-19, these neighbors are likely to face many more months of physical isolation and the challenges that come with it – difficulty accessing food, medicine and mental health services, a lack of reliable information, and separation from friends and family. 
+Because older adults face a higher health risk due to COVID-19, these neighbors are likely to face many more months of physical isolation and the challenges that come with it – difficulty accessing food, medicine and mental health services, a lack of reliable information, and separation from friends and family.
 
 By volunteering to regularly make calls to seniors during this crisis, you can help connect your neighbors to the resources they need while building meaningful relationships.
 
