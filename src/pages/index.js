@@ -431,13 +431,13 @@ export default function Homepage(props) {
           {defaultSignupButtonLabel}
         </BlueButton>
       </PostStepsSection>
-      <PostStepsSection>
+      {/* <PostStepsSection>
         <QuoteContainer>
           <Quote>"{homepageQuote}"</Quote>
           <QuoteAuthor>{homepageQuoteAuthor}</QuoteAuthor>
           <QuoteTitle>{homepageQuoteTitle}</QuoteTitle>
         </QuoteContainer>
-      </PostStepsSection>
+      </PostStepsSection> */}
       <PostStepsSection>
         <AboutHeader>{homepageAboutHeader}</AboutHeader>
         <AboutParagraph>{homepageAboutCopy}</AboutParagraph>
