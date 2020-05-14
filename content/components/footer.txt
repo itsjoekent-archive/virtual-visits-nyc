@@ -10,11 +10,11 @@ Contact Us:::/p/contact-us
 Resources for Volunteers 
 
 @footerVolunteerLinks
-Initial Call Script:::/p/initial-call-script
-Conversation Tips:::/p/conversation-starters
 Volunteer Guide:::https://docs.google.com/document/d/1BhHs96g_Py-fM-qweagoCdqsyL-41A99u9Eih9ZhHh4/edit?usp=sharing
-Resend my matches:::/
-Unsubscribe from matching:::/
+Recurring Call Form:::https://airtable.com/shrMSplh6yLp9TKNU
+Conversation Tips:::/p/conversation-starters
+Resend Matches:::https://airtable.com/shrLGPTQ7LH8ebAnX
+Stop Volunteering:::https://airtable.com/shr0WuDOdiProo3JM
 
 @footerSeniorTitle
 Help for older adults
