@@ -6,11 +6,6 @@ About
 
 The Neighbor Network matches volunteers with seniors to call in New York City during the COVID-19 crisis. These regular calls help to fight social isolation, connect older New Yorkers with the resources they need, and build relationships that will bring joy and comfort to seniors and volunteers alike. 
 
-<blockquote>
-  <p>In times of crisis, New Yorkers look out for each other. As coronavirus keeps older adults home-bound for months on end, regular calls through the neighbor network help to connect people to support, to prevent social isolation from gnawing deeper, to build relationships that sustain us through this challenging time, and to bring a little joy into lonely days on both sides of the phone line.</p>
-  <footer>Brad Lander <cite>New York City Council Member for the 39th District</cite></footer>
-</blockquote>
-
 ## Our Partners
 
 The Neighbor Network is built on a partnership between Greenwich House, Heights & Hills, the New York Civic Engagement Table and the Office of NYC Council Member Brad Lander.
@@ -26,6 +21,16 @@ The Neighbor Network is built on a partnership between Greenwich House, Heights 
     <img src="/nycet.jpg" alt="New York Civic Engagement Table logo" />
   </span>
 </div>
+
+<blockquote>
+  <p>In times of crisis, New Yorkers look out for each other. As coronavirus keeps older adults home-bound for months on end, regular calls through the neighbor network help to connect people to support, to prevent social isolation from gnawing deeper, to build relationships that sustain us through this challenging time, and to bring a little joy into lonely days on both sides of the phone line.</p>
+  <footer>Brad Lander <cite>New York City Council Member for the 39th District</cite></footer>
+</blockquote>
+
+<blockquote>
+  <p>For over 100 years Greenwich House has advanced a mission of building and supporting community to address the needs of our time, whatever they may be. Our legacy spans two world wars, the world’s last global flu pandemic, the Aids crisis of the 1980s, economic calamity and more, and we’re proud to join this great group of partners to support our neighbors in need during this global and local health crisis.</p>
+  <footer>Darren Bloch <cite>CEO & Executive Director, Greenwich House</cite></footer>
+</blockquote>
 
 ## Why now?
 
