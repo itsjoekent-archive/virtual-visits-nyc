@@ -5,4 +5,4 @@ Sign up
 Sign up for a virtual training and get started making calls!
 
 @defaultMobilizeEventLink
-https://www.mobilize.us/greenwichhouses/
+https://www.mobilize.us/neighbornetwork/
