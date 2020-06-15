@@ -5,11 +5,8 @@ Resources for seniors:::/p/resources-for-seniors
 
 @volunteerHelpList
 Heights and Hills/Brooklyn:::/p/heights-and-hills
-Volunteer Guide:::https://docs.google.com/document/d/1BhHs96g_Py-fM-qweagoCdqsyL-41A99u9Eih9ZhHh4/edit?usp=sharing
-Recurring Call Form:::https://airtable.com/shrMSplh6yLp9TKNU
+Greenwich House/Manhattan:::/p/greenwich-house
 Conversation Tips:::/p/conversation-starters
-Resend Matches:::https://airtable.com/shrLGPTQ7LH8ebAnX
-Stop Volunteering:::https://airtable.com/shr0WuDOdiProo3JM
 
 @menuButtonLabel
 Menu
