@@ -11,7 +11,7 @@ Resources for Volunteers
 
 @footerVolunteerLinks
 Heights and Hills/Brooklyn:::/p/heights-and-hills
-Greenwich House/Manhattan:::/p/greenwich-house
+Greenwich House/West Village:::/p/greenwich-house
 Conversation Tips:::/p/conversation-starters
 
 @footerSeniorTitle
