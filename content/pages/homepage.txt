@@ -37,7 +37,7 @@ step three (10-60 mins/week, up to you!)
 Build a friendly relationship!
 
 @homepageStepThreeCopy
-Build relationships with your senior neighbors by calling them twice a week for the duration of the COVID-19 crisis
+Build relationships with your senior neighbors by calling them once or twice a week for the duration of the COVID-19 crisis
 
 @homepageSteps
 homepageStepOne,homepageStepTwo,homepageStepThree
