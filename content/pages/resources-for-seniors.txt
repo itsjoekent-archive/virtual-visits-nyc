@@ -17,7 +17,7 @@ In any emergencies, immediately call 911.
 
 [COVID-19 test site finder](https://www1.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page)
 [COVID-19 free testing sites](https://www.nychealthandhospitals.org/covid-19-testing-sites/) 
-[Free testing information] (https://www.nychealthandhospitals.org/test-and-trace/testing/)
+[Free testing information](https://www.nychealthandhospitals.org/test-and-trace/testing/)
 [Rapid tests](https://www1.nyc.gov/site/doh/covid/covid-19-rapid-testing.page)--available after Sep. 7
 
 The Neighbor Network is sharing the COVID-19 and testing related information as a means to connect the community with local resources and cannot guarantee the services being presented. This information is subject to change as updates occur and it is the responsibility of the individual seeking testing to review carefully, periodically, and verify directly with the organizations providing the information.
