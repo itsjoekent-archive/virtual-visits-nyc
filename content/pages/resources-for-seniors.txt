@@ -4,6 +4,8 @@ Resources For Seniors
 @pageContent
 This list is a summary of the most important resources available for seniors in NYC. If you would like to look through a more extensive list, check [here.](https://docs.google.com/document/d/1wZQLnpdZLHRmDPqaKrk9C8ib5WiPzPksexY_8ZnXx0Q/edit?usp=sharing)
 
+The Neighbor Network is sharing this list of resources as a means to connect the community with local services and cannot guarantee the availability of services. This information is subject to change at the discretion of the service providers. It is the responsibility of the individual seeking the services to review carefully, periodically, and verify directly with the organizations regarding services.
+
 **911**
 In any emergencies, immediately call 911. 
 
@@ -15,6 +17,10 @@ In any emergencies, immediately call 911.
 
 [COVID-19 test site finder](https://www1.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page)
 [COVID-19 free testing sites](https://www.nychealthandhospitals.org/covid-19-testing-sites/) 
+[Free testing information] (https://www.nychealthandhospitals.org/test-and-trace/testing/)
+[Rapid tests](https://www1.nyc.gov/site/doh/covid/covid-19-rapid-testing.page)--available after Sep. 7
+
+The Neighbor Network is sharing the COVID-19 and testing related information as a means to connect the community with local resources and cannot guarantee the services being presented. This information is subject to change as updates occur and it is the responsibility of the individual seeking testing to review carefully, periodically, and verify directly with the organizations providing the information.
 
 **Healthcare**
 NYC Health and Hospitals: 1-844-NYC-4NYC for appointments.
