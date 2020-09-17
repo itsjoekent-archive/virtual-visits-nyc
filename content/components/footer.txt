@@ -4,6 +4,7 @@ About Us
 @footerAboutLinks
 About the Neighbor Network:::/p/about
 About Greenwich House:::https://www.greenwichhouse.org/about/
+About Heights and Hills:::https://www.heightsandhills.org/
 Contact Us:::/p/contact-us
 
 @footerVolunteerTitle
