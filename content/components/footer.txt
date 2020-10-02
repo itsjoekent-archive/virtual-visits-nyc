@@ -3,6 +3,7 @@ About Us
 
 @footerAboutLinks
 About the Neighbor Network:::/p/about
+Donate:::https://www.greenwichhouse.org/donate-to-the-neighbor-network/
 About Greenwich House:::https://www.greenwichhouse.org/about/
 About Heights and Hills:::https://www.heightsandhills.org/about/
 Contact Us:::/p/contact-us
