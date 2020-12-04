@@ -20,6 +20,9 @@ The Neighbor Network is built on a partnership between Greenwich House, Heights 
   <span>
     <img src="/nycet.jpg" alt="New York Civic Engagement Table logo" />
   </span>
+  <span>
+    <img src="/nyctlogo.jpg" alt="The New York Community Trust logo" />
+  </span>
 </div>
 
 <blockquote>
