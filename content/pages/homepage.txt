@@ -28,7 +28,7 @@ step two (30 minutes-3 hours)
 Reach out to new seniors
 
 @homepageStepTwoCopy
-Make short introductory calls to connect older adults facing isolation to our program. 
+Make short introductory calls to connect older adults facing isolation to our program
 
 @homepageStepThreeLabel
 step three (10-60 mins/week, up to you!)
@@ -37,7 +37,7 @@ step three (10-60 mins/week, up to you!)
 Build a friendly relationship! 
 
 @homepageStepThreeCopy
-Build relationships with your senior neighbors you connected with in step 2 by calling them regularly. You can also choose to continue with step 2 only, which is a more flexible commitment. 
+Build relationships with your senior neighbors you connected with in step 2 by calling them regularly. You can also choose to continue with step 2 only, which is a more flexible commitment
 
 @homepageSteps
 homepageStepOne,homepageStepTwo,homepageStepThree
