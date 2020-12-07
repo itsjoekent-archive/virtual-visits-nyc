@@ -22,22 +22,22 @@ Virtual Training
 Attend a short online video training with other volunteers covering how to make calls, tips for your conversations, and when and how to reach out for help
 
 @homepageStepTwoLabel
-step two (30-60 mins)
+step two (30 minutes-3 hours)
 
 @homepageStepTwoTitle
-Match with 1-3 seniors
+Reach out to new seniors
 
 @homepageStepTwoCopy
-Make short introductory calls to seniors until you connect with 1-3 who want to receive ongoing calls
+Make short introductory calls to connect older adults facing isolation to our program. 
 
 @homepageStepThreeLabel
 step three (10-60 mins/week, up to you!)
 
 @homepageStepThreeTitle
-Build a friendly relationship!
+Build a friendly relationship! 
 
 @homepageStepThreeCopy
-Build relationships with your senior neighbors by calling them once or twice a week for the duration of the COVID-19 crisis
+Build relationships with your senior neighbors you connected with in step 2 by calling them regularly. You can also choose to continue with step 2 only, which is a more flexible commitment. 
 
 @homepageSteps
 homepageStepOne,homepageStepTwo,homepageStepThree
