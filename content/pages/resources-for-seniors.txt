@@ -14,10 +14,17 @@ In any emergencies, immediately call 911.
 
 **Coronavirus Vaccine Information** 
 New York City residents 65 and older are now eligible to receive the coronavirus vaccine.
-[New York City vaccine finder website](vaccinefinder.nyc.gov)
-New York City vaccine hotline: 1-877-VAX-4-NYC
-[New York State vaccine finder website](am-i-eligible.covid19vaccine.health.ny.gov)
+[New York City vaccine finder website](https://vaccinefinder.nyc.gov)
+New York City vaccine hotline: 1-877-VAX-4-NYC or 1-877-829-4692
+[New York State vaccine finder website](https://am-i-eligible.covid19vaccine.health.ny.gov/)
 Please keep in mind that the situation regarding vaccine availability is rapidly changing. There may not currently be any appointments available, but keep checking back if you are not able to schedule right away. You should not have to share any bank account, Social Security or credit card information to make a vaccination appintment. 
+
+For transportation to vaccine appointments, the following options are available:
+If a senior has access to Access-a-Ride: contact them at (877) 337-2017.
+If a senior has access to Medicaid-provided transportation: use their usual contact number to schedule transport. You can also call (844) 666-6270.
+If a senior is homebound or needs an ambulette, they can schedule free transport with Hunter ambulettes at (718) 991-2211.
+People 65 and older who not qualify for the transportation options above can schedule a free ride with Curb at (646) 349-0289.
+For seniors who use Curb/Hunter services for their first dose appointment, they will receive a code which can also be used for the second dose appointment. Seniors should call Curb/Hunter directly to schedule transportation for their next appointment.
 
 **Coronavirus Testing Information**
 [NYC Health coronavirus page](https://www1.nyc.gov/site/doh/health/health-topics/coronavirus.page)
