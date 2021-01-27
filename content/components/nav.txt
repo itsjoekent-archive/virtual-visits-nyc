@@ -6,7 +6,7 @@ Resources for seniors:::/p/resources-for-seniors
 @volunteerHelpList
 Heights and Hills/Brooklyn:::/p/heights-and-hills
 Greenwich House/West Village:::/p/greenwich-house
-Friendly Calls:::/p/https://docs.google.com/document/d/1dJu5SFZ_iXOLaL5v-1gGB8RLkCS6NQBIcusJxn_ieyc/edit?usp=sharing
+Friendly Calls:::https://docs.google.com/document/d/1dJu5SFZ_iXOLaL5v-1gGB8RLkCS6NQBIcusJxn_ieyc/edit?usp=sharing
 Conversation Tips:::/p/conversation-starters
 
 @menuButtonLabel
