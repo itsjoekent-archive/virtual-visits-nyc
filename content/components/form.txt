@@ -2,7 +2,7 @@
 Sign up
 
 @defaultCallToAction
-Sign up for a virtual training and get started making calls!
+Sign up to make or recieve calls!
 
 @defaultMobilizeEventLink
 https://theneighbornetwork.org/p/sign-up
