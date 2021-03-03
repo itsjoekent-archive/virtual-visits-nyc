@@ -2,7 +2,7 @@
 Sign up
 
 @defaultCallToAction
-Sign up to make or recieve calls!
+Sign up to make or receive calls!
 
 @defaultMobilizeEventLink
 https://theneighbornetwork.org/p/sign-up
