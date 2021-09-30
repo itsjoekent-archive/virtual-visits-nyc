@@ -70,3 +70,7 @@ And if you have any questions, you can email us at felicia@theneighbornetwork.or
 ## Can I donate to Neighbor Network? 
 
 Yes! [You can support our work with a donation here.](https://www.greenwichhouse.org/donate-to-the-neighbor-network/) Thank you so much for your support. 
+
+## Learn about the tech behind Neighbor Network
+
+The Neighbor Network uses a program called [Airtable](airtable.com) to track all our volunteers, seniors, calls between them, and other data, as well as to automate many aspects of volunteer management. Over the course of the pandemic, we have developed and tweaked the system, and we've found it hugely helpful. [We put together this template, which synthesizes what we learned, to help other programs or volunteer groups learn about how we set it up.](https://www.airtable.com/universe/exp5Mr1chqOSiLwRz/neighbor-network-volunteer-management-template) You can also check out a [guide to the template here.](https://docs.google.com/document/d/1JxPon7Tl7Qbn7nzRM2EwBR4Rafg0Kwws4fNHI6H3we8/edit?usp=sharing.)
