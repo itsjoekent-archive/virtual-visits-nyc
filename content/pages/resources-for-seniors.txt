@@ -13,13 +13,15 @@ In any emergencies, immediately call 911.
 311 is the central number to call for access to all NYC government services. 
 
 **Coronavirus Vaccine Information** 
-New York City residents 65 and older are now eligible to receive the coronavirus vaccine.
+New York City residents 12 and older are now eligible to receive the coronavirus vaccine.
 [New York City vaccine finder website](https://vaccinefinder.nyc.gov)
 New York City vaccine hotline: 1-877-VAX-4-NYC or 1-877-829-4692
 [New York State vaccine finder website](https://am-i-eligible.covid19vaccine.health.ny.gov/)
 [NYC Vaccine List](https://nycvaccinelist.com/): Volunteer-led effort to display appointment availability from different sources across the city in one place. 
 
-Please keep in mind that the situation regarding vaccine availability is rapidly changing. There may not currently be any appointments available, but keep checking back if you are not able to schedule right away. You should not have to share any bank account, Social Security or credit card information to make a vaccination appintment. 
+You should not have to share any bank account, Social Security or credit card information to make a vaccination appintment. 
+
+Individuals 65 and over who received their second dose over 6 months ago are now eligible for booster shots. [You can find information about eligibility here.](https://www1.nyc.gov/assets/doh/downloads/pdf/covid/covid-19-vaccine-third-dose-vs-booster.pdf)
 
 For transportation to vaccine appointments, the following options are available:
 If a senior has access to Access-a-Ride: contact them at (877) 337-2017.
@@ -43,11 +45,6 @@ NYC Health and Hospitals: 1-844-NYC-4NYC for appointments.
 
 **Mental Health**
 NYC Well: Free confidential counseling in more than 200 languages. Call 888-NYC-WELL (888-692-9355), Text "WELL" to 65173, chat at [NYC.gov/nycwell](https://NYC.gov/nycwell).
-
-**Food**
-Seniors can call 311 or sign up [here](https://cv19engagementportal.cityofnewyork.us/#/display/5e7555117ad6750216160409) to place orders for free meal deliveries. Orders can be placed every 48 hours, and will take 48 hours from the first request. However, we have heard the food is more like snacks than meals.
-
-The [Get Food NYC map](https://www.arcgis.com/apps/webappviewer/index.html?id=35901167a9d84fb0a2e0672d344f176f) has the locations of food hubs where New Yorkers can go between 11:30 and 1:30 to pick up three meals daily.
 
 **Mutual Aid**
 [Information on mutual aid groups by neighborhood.](http://mutualaid.nyc/groups/) Specific services will vary by group, but many can help pick up necessary pharmacy and grocery items.
